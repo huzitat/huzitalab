@@ -62,7 +62,6 @@ jobs:
           debug 6
           open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
 
-          cd huzitalab
           mirror --reverse --verbose --parallel=1 ./public/ ./
 
           bye
