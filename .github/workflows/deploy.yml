@@ -31,7 +31,7 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify --baseURL "https://www.huzitat.com/huzitalab/"
+        run: hugo --minify --baseURL "https://www.huzitat.com/"
 
       - name: Upload to Lolipop
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
