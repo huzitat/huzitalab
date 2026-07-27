@@ -42,14 +42,22 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER" <<'LFTP_COMMANDS'
+          lftp <<LFTP_COMMANDS
+          set cmd:fail-exit true
+          set net:max-retries 2
+          set net:timeout 30
+          set net:reconnect-interval-base 5
+
           set ftp:ssl-force true
           set ftp:ssl-protect-data true
           set ssl:verify-certificate no
+
           set ftp:passive-mode true
-          set net:max-retries 2
+          set ftp:prefer-epsv false
+          set ftp:use-feat no
+
+          open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
           pwd
-          cls -la
-          mirror --reverse --verbose --parallel=2 ./public/ ./
+          mirror --reverse --verbose --parallel=1 ./public/ ./
           bye
           LFTP_COMMANDS
