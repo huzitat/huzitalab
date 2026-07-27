@@ -36,23 +36,77 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      - name: Test upload to Lolipop
+      - name: Upload to Lolipop
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         shell: bash
         run: |
-          set -euo pipefail
+          python <<'PYTHON'
+          import ftplib
+          import os
+          import ssl
+          from pathlib import Path
 
-          echo "GitHub Actions FTP test" > ftp-test.txt
+          server = os.environ["FTP_SERVER"]
+          username = os.environ["FTP_USERNAME"]
+          password = os.environ["FTP_PASSWORD"]
+          local_root = Path("public")
 
-          curl \
-            --verbose \
-            --fail \
-            --show-error \
-            --ssl-reqd \
-            --ftp-pasv \
-            --user "$FTP_USERNAME:$FTP_PASSWORD" \
-            --upload-file ftp-test.txt \
-            "ftp://$FTP_SERVER/web/huzitalab/ftp-test.txt"
+          if not local_root.is_dir():
+              raise SystemExit("public directory does not exist")
+
+          files = sorted(path for path in local_root.rglob("*") if path.is_file())
+
+          def connect():
+              context = ssl.create_default_context()
+
+              ftp = ftplib.FTP_TLS(context=context, timeout=60)
+              ftp.connect(server, 21)
+              ftp.auth()
+              ftp.login(username, password)
+              ftp.prot_p()
+              ftp.set_pasv(True)
+
+              return ftp
+
+          def enter_directory(ftp, directory):
+              try:
+                  ftp.cwd(directory)
+              except ftplib.error_perm as error:
+                  if not str(error).startswith("550"):
+                      raise
+
+                  print(f"Creating directory: {directory}")
+                  ftp.mkd(directory)
+                  ftp.cwd(directory)
+
+          for index, local_file in enumerate(files, start=1):
+              relative = local_file.relative_to(local_root)
+              remote_parts = relative.parts
+
+              print(f"[{index}/{len(files)}] Uploading: {relative.as_posix()}")
+
+              # PWDが禁止されているため、各ファイルごとに接続し直し、
+              # FTPログイン直後を基準に相対移動する
+              ftp = connect()
+
+              try:
+                  for directory in remote_parts[:-1]:
+                      enter_directory(ftp, directory)
+
+                  with local_file.open("rb") as source:
+                      ftp.storbinary(
+                          f"STOR {remote_parts[-1]}",
+                          source,
+                          blocksize=64 * 1024,
+                      )
+              finally:
+                  try:
+                      ftp.quit()
+                  except Exception:
+                      ftp.close()
+
+          print(f"Uploaded {len(files)} files successfully.")
+          PYTHON
