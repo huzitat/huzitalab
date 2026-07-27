@@ -47,7 +47,9 @@ jobs:
           set ftp:ssl-protect-data true
           set ssl:verify-certificate no
           set ftp:passive-mode true
-          cd huzitalab
-          mirror --reverse --delete --verbose --parallel=2 ./public/ ./
+          set net:max-retries 2
+          pwd
+          cls -la
+          mirror --reverse --verbose --parallel=2 ./public/ ./
           bye
           LFTP_COMMANDS
