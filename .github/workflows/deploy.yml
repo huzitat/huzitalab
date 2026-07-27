@@ -49,7 +49,7 @@ jobs:
           set net:reconnect-interval-base 5
 
           set ftp:ssl-force true
-          set ftp:ssl-protect-data true
+          set ftp:ssl-protect-data false
           set ssl:verify-certificate no
 
           set ftp:passive-mode true
