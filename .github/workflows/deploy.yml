@@ -35,11 +35,12 @@ jobs:
 
       - name: Upload to Lolipop
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/
-          server-dir: huzitalab/
-          state-name: .huzitalab-deploy-state.json
-          log-level: standard
+with:
+  server: ${{ secrets.FTP_SERVER }}
+  username: ${{ secrets.FTP_USERNAME }}
+  password: ${{ secrets.FTP_PASSWORD }}
+  protocol: ftps
+  local-dir: ./public/
+  server-dir: huzitalab/
+  state-name: .huzitalab-deploy-state.json
+  log-level: standard
