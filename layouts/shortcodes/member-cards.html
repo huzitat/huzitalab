@@ -1,0 +1,99 @@
+{{ $type := .Get "type" }}
+
+{{ if eq $type "faculty" }}
+
+<div class="faculty-card">
+
+  <img src="/images/members/faculty.jpg" alt="Faculty">
+
+  <div class="faculty-info">
+
+    <h2>Huzita Tomohumi</h2>
+
+    <p class="faculty-position">
+      Associate Professor
+    </p>
+
+    <p class="faculty-affiliation">
+      Forest Environmental Assessment Laboratory
+    </p>
+
+    <h3>Research Interests</h3>
+
+    <ul class="research-list">
+      <li>Forest Environmental Assessment</li>
+      <li>Life Cycle Assessment (LCA)</li>
+      <li>Greenhouse Gas Accounting</li>
+      <li>Sustainable Wood Utilization</li>
+      <li>Regional Economy</li>
+      <li>Satoyama and Human–Forest Relationships</li>
+    </ul>
+
+    <p>
+      <strong>Email:</strong><br>
+      huzita@nagano.ac.jp
+    </p>
+
+<div class="profile-links">
+
+<a href="https://researchmap.jp/tomh" title="ResearchMap">
+<i class="fa-solid fa-map-location-dot"></i>
+</a>
+
+<a href="https://orcid.org/0000-0002-8822-8426" title="ORCID">
+<i class="fa-brands fa-orcid"></i>
+</a>
+
+<a href="https://scholar.google.co.jp/citations?hl=ja&user=jmOsaV0AAAAJ" title="Google Scholar">
+<i class="fa-brands fa-google"></i>
+</a>
+
+<a href="https://www.researchgate.net/profile/Tomohumi-Huzita-2" title="ResearchGate">
+<i class="fa-brands fa-researchgate"></i>
+</a>
+
+<a href="https://x.com/HuzitaLab" title="X">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+<a href="https://www.instagram.com/huzitalab/" title="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+</div>
+
+  </div>
+
+</div>
+
+{{ end }}
+
+{{ if eq $type "students" }}
+
+<div class="member-grid">
+
+  <div class="member-card">
+
+    <img src="/images/members/student.jpg" alt="Students">
+
+    <h3>Students</h3>
+
+    <p class="member-role">
+
+      Building the Next Generation of Researchers
+
+    </p>
+
+    <p>
+
+      Our laboratory is part of a newly established faculty.
+      Undergraduate and graduate students will join the laboratory
+      as the program continues to grow.
+
+    </p>
+
+  </div>
+
+</div>
+
+{{ end }}

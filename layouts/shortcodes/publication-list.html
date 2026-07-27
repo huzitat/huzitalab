@@ -1,0 +1,140 @@
+{{ $type := .Get "type" }}
+
+<div class="publication-list">
+
+  {{ if eq $type "journal" }}
+
+  <article class="publication-card">
+
+    <div class="publication-meta">
+      <span class="publication-year">2025</span>
+      <span class="publication-type">Journal Article</span>
+    </div>
+
+    <h3>
+      Economic Impacts of Material Selection on Check Dam Construction in Japan: An Input–Output Analysis Promoting Timber Use  
+    </h3>
+
+    <p class="publication-authors">
+      Tomohumi Huzita, and Ryu Noda 
+    </p>
+
+    <p class="publication-source">
+      <em>Results in Engineering</em>, 28, 107425, 2025
+    </p>
+
+    <div class="publication-links">
+      <a href="https://doi.org/10.1016/j.rineng.2025.107425" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+
+      <a href="/pdf/publications/2025/2025resultineng.pdf" target="_blank" rel="noopener noreferrer">
+        PDF
+      </a>
+
+      <a href="/projects/regional-economy/">
+        Related Project
+      </a>
+
+        <a href="/research-themes/regional-economy/">
+    Related Theme
+  </a>
+    </div>
+</article>
+
+      <article class="publication-card">
+    <div class="publication-meta">
+      <span class="publication-year">2025</span>
+      <span class="publication-type">Journal Article</span>
+    </div>
+
+    <h3>
+       Comparison of greenhouse gas emissions associated with the construction of timber, concrete, and steel check dams in Akita, Japan: An input-output analysis   
+    </h3>
+
+    <p class="publication-authors">
+      Tomohumi Huzita, and Ryu Noda 
+    </p>
+
+    <p class="publication-source">
+      <em> PLOS ONE</em>, 20(1), e0316153, 2025
+    </p>
+
+    <div class="publication-links">
+      <a href="https://doi.org/10.1371/journal.pone.0316153" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+
+      <a href="/pdf/publications/2025/journal.pone.0316153.pdf" target="_blank" rel="noopener noreferrer">
+        PDF
+      </a>
+
+      <a href="/projects/wood-lca/">
+        Related Project
+      </a>
+
+        <a href="/research-themes/wood-utilization/">
+    Related Theme
+  </a>
+    </div>
+
+
+  </article>
+
+  {{ end }}
+
+
+  {{ if eq $type "book" }}
+
+  <div class="publication-empty">
+
+    <i class="fa-solid fa-book" aria-hidden="true"></i>
+
+    <div>
+      <h3>Books and Book Chapters</h3>
+      <p>
+        Books and book chapters will be added here.
+      </p>
+    </div>
+
+  </div>
+
+  {{ end }}
+
+
+  {{ if eq $type "conference" }}
+
+  <div class="publication-empty">
+
+    <i class="fa-solid fa-users" aria-hidden="true"></i>
+
+    <div>
+      <h3>Conference Proceedings</h3>
+      <p>
+        Conference papers and presentations will be added here.
+      </p>
+    </div>
+
+  </div>
+
+  {{ end }}
+
+
+  {{ if eq $type "report" }}
+
+  <div class="publication-empty">
+
+    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+
+    <div>
+      <h3>Reports and Other Publications</h3>
+      <p>
+        Reports, technical documents, and other publications will be added here.
+      </p>
+    </div>
+
+  </div>
+
+  {{ end }}
+
+</div>

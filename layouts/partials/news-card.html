@@ -1,0 +1,61 @@
+{{ $category := .Params.category | default "Announcement" }}
+{{ $categoryClass := $category | lower | urlize }}
+
+<article class="news-item">
+
+  <div class="news-meta">
+
+    <time class="news-date"
+          datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "2006.01.02" }}
+    </time>
+
+    <span class="news-tag news-tag-{{ $categoryClass }}">
+
+      {{ if eq $category "Publication" }}
+        <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+
+      {{ else if eq $category "Conference" }}
+        <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
+
+      {{ else if eq $category "Project" }}
+        <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+
+      {{ else if eq $category "Award" }}
+        <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+
+      {{ else if eq $category "Student" }}
+        <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+
+      {{ else }}
+        <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+      {{ end }}
+
+      {{ $category }}
+
+    </span>
+
+  </div>
+
+  <div class="news-content">
+
+    <h2 class="news-title">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+
+    {{ with .Params.summary }}
+      <p>{{ . }}</p>
+    {{ else }}
+      <p>{{ .Summary | plainify | truncate 180 }}</p>
+    {{ end }}
+
+    <a class="news-read-more" href="{{ .RelPermalink }}">
+      Read more
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+
+  </div>
+
+</article>

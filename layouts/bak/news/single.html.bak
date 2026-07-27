@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+  {{ $category := .Params.category | default "Announcement" }}
+  {{ $categoryClass := $category | lower | urlize }}
+
+  <article class="news-single">
+
+    <header class="news-single-header">
+
+      <div class="news-single-meta">
+
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+
+        <span class="news-tag news-tag-{{ $categoryClass }}">
+          {{ $category }}
+        </span>
+
+      </div>
+
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.summary }}
+        <p class="news-single-summary">
+          {{ . }}
+        </p>
+      {{ end }}
+
+    </header>
+
+    <div class="news-single-content">
+      {{ .Content }}
+    </div>
+
+    <footer class="news-single-footer">
+
+      <a href="{{ "/news/" | relURL }}">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Back to News
+      </a>
+
+    </footer>
+
+  </article>
+
+{{ end }}

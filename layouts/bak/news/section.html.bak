@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+
+<div class="news-page">
+
+{{ .Content }}
+
+    <div class="news-list">
+
+      {{ $pages := .RegularPages.ByDate.Reverse }}
+
+      {{ if gt (len $pages) 0 }}
+
+        {{ range $pages }}
+          {{ partial "news-card.html" . }}
+        {{ end }}
+
+      {{ else }}
+
+        <div class="news-empty">
+
+          <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+
+          <div>
+            <h2>No news yet</h2>
+            <p>Latest laboratory news will be posted here.</p>
+          </div>
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </div>
+
+{{ end }}
