@@ -9,7 +9,7 @@ description: "Creating value from forests for people, regions, and the environme
   tagline="Creating value from forests for people, regions, and the environment."
 >}}
 
-The the Forest Environmental Assessment Laboratory explores how forests and timber create environmental, economic, and social value.
+The Forest Environmental Assessment Laboratory explores how forests and timber create environmental, economic, and social value.
 
 By integrating natural and social science approaches, we aim to support sustainable regional development and reconnect forests with people's everyday lives.
 
