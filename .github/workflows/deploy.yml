@@ -54,15 +54,14 @@ jobs:
 
           set ftp:passive-mode true
           set ftp:prefer-epsv false
-
-          # PWDを使った自動ホーム判定を回避
+          set ftp:use-mlsd false
           set ftp:home "."
           set ftp:use-tvfs false
 
-          debug 6
           open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
 
-          mirror --reverse --verbose --parallel=1 ./public/ ./
+          lcd ./public
+          mirror --reverse --verbose --parallel=1
 
           bye
           LFTP_COMMANDS
