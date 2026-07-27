@@ -64,5 +64,5 @@ jobs:
               --ftp-create-dirs \
               --user "$FTP_USERNAME:$FTP_PASSWORD" \
               --upload-file "$file" \
-              "ftp://$FTP_SERVER/$remote_path"
+              "ftp://$FTP_SERVER/huzitalab/$remote_path"
           done
