@@ -41,6 +41,6 @@ with:
   password: ${{ secrets.FTP_PASSWORD }}
   protocol: ftps
   local-dir: ./public/
-  server-dir: huzitalab/
+  server-dir: huzitalab
   state-name: .huzitalab-deploy-state.json
   log-level: verbose
