@@ -36,7 +36,7 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      - name: Upload to Lolipop
+      - name: Test upload to Lolipop
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
@@ -45,24 +45,14 @@ jobs:
         run: |
           set -euo pipefail
 
-          cd public
+          echo "GitHub Actions FTP test" > ftp-test.txt
 
-          find . -type f -print0 |
-          while IFS= read -r -d '' file; do
-            remote_path="${file#./}"
-
-            echo "Uploading: $remote_path"
-
-            curl \
-              --fail \
-              --show-error \
-              --silent \
-              --retry 3 \
-              --retry-delay 3 \
-              --ftp-ssl \
-              --ftp-pasv \
-              --ftp-create-dirs \
-              --user "$FTP_USERNAME:$FTP_PASSWORD" \
-              --upload-file "$file" \
-              "ftp://$FTP_SERVER/huzitalab/$remote_path"
-          done
+          curl \
+            --verbose \
+            --fail \
+            --show-error \
+            --ssl-reqd \
+            --ftp-pasv \
+            --user "$FTP_USERNAME:$FTP_PASSWORD" \
+            --upload-file ftp-test.txt \
+            "ftp://$FTP_SERVER/web/huzitalab/ftp-test.txt"
