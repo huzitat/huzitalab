@@ -40,6 +40,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
-          server-dir: huzitalab/
+          server-dir: ./huzitalab/
           state-name: .huzitalab-deploy-state.json
           log-level: standard
