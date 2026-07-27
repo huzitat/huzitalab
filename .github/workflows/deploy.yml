@@ -36,28 +36,34 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      - name: Upload to Lolipop
+      - name: Diagnose Lolipop FTP
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
+          echo "GitHub Actions FTP test" > ftp-test.txt
+
           lftp <<LFTP_COMMANDS
           set cmd:fail-exit true
-          set net:max-retries 2
-          set net:timeout 30
-          set net:reconnect-interval-base 5
+          set net:max-retries 1
+          set net:timeout 20
+          set net:reconnect-interval-base 3
 
           set ftp:ssl-force true
-          set ftp:ssl-protect-data false
+          set ftp:ssl-protect-data true
           set ssl:verify-certificate no
 
           set ftp:passive-mode true
           set ftp:prefer-epsv false
-          set ftp:use-feat no
 
+          debug 6
           open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
+
           pwd
-          mirror --reverse --verbose --parallel=1 ./public/ ./
+          cls -la
+          put ftp-test.txt -o ftp-test.txt
+          cls -la
+
           bye
           LFTP_COMMANDS
