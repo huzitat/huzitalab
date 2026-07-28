@@ -2,6 +2,7 @@
   {{- $imgObj := .imgObj -}}
   {{- $src := .src -}}
   {{- $alt := .alt -}}
+
   <img
     class="my-0 rounded-md"
     loading="lazy"
@@ -9,45 +10,33 @@
     fetchpriority="low"
     alt="{{ $alt }}"
     src="{{ $src }}"
-    {{ with $imgObj -}}
-      {{ with $imgObj.Width }}width="{{ . }}"{{ end }}
-      {{ with $imgObj.Height }}height="{{ . }}"{{ end }}
+    {{- with $imgObj }}
+      {{- with .Width }} width="{{ . }}"{{ end }}
+      {{- with .Height }} height="{{ . }}"{{ end }}
     {{- end }}>
 {{- end -}}
 
+
 {{- define "RenderImageResponsive" -}}
-  {{/* Responsive Image
-    The current setting sizes="(min-width: 768px) 50vw, 65vw" makes the iPhone 16 and 16 Pro
-    select a smaller image, while the iPhone 16 Pro Max selects a larger image.
-
-    Steps:
-    1. Check the media queries in the `sizes` property.
-    2. Find the first matching value. For example, on a mobile device with a CSS pixel width
-    of 390px and DPR = 3 (iPhone 13), given setting sizes="(min-width: 768px) 50vw, 100vw",
-    it matches the `100vw` option.
-    3. Calculate the optimal image size: 390 × 3 × 100% (100vw) = 1170.
-    4. Find the corresponding match in the `srcset`.
-
-    To make the browser select a smaller image on mobile devices
-    override the template and change the `sizes` property to "(min-width: 768px) 50vw, 30vw"
-
-    The sizes="auto" is valid only when loading="lazy".
-  */}}
   {{- $imgObj := .imgObj -}}
   {{- $alt := .alt -}}
   {{- $originalWidth := $imgObj.Width -}}
 
   {{- $img800 := $imgObj -}}
   {{- $img1280 := $imgObj -}}
+
   {{- if gt $originalWidth 800 -}}
     {{- $img800 = $imgObj.Resize "800x" -}}
   {{- end -}}
+
   {{- if gt $originalWidth 1280 -}}
     {{- $img1280 = $imgObj.Resize "1280x" -}}
   {{- end -}}
 
-  {{- $srcset := printf "%s 800w, %s 1280w" $img800.RelPermalink $img1280.RelPermalink -}}
-
+  {{- $srcset := printf "%s 800w, %s 1280w"
+    $img800.RelPermalink
+    $img1280.RelPermalink
+  -}}
 
   <img
     class="my-0 rounded-md"
@@ -55,13 +44,14 @@
     decoding="async"
     fetchpriority="auto"
     alt="{{ $alt }}"
-    {{ with $imgObj.Width }}width="{{ . }}"{{ end }}
-    {{ with $imgObj.Height }}height="{{ . }}"{{ end }}
+    {{- with $imgObj.Width }} width="{{ . }}"{{ end }}
+    {{- with $imgObj.Height }} height="{{ . }}"{{ end }}
     src="{{ $img800.RelPermalink }}"
     srcset="{{ $srcset }}"
     sizes="(min-width: 768px) 50vw, 65vw"
     data-zoom-src="{{ $imgObj.RelPermalink }}">
 {{- end -}}
+
 
 {{- define "RenderImageCaption" -}}
   {{- with .caption -}}
@@ -69,46 +59,134 @@
   {{- end -}}
 {{- end -}}
 
-{{- $disableImageOptimizationMD := .Page.Site.Params.disableImageOptimizationMD | default false -}}
-{{- $urlStr := .Destination | safeURL -}}
+
+{{- $disableImageOptimizationMD :=
+  .Page.Site.Params.disableImageOptimizationMD | default false
+-}}
+
+{{- $urlStr := string .Destination -}}
 {{- $url := urls.Parse $urlStr -}}
 {{- $altText := .Text -}}
 {{- $caption := .Title -}}
-{{- $isRemote := findRE "^(https?|data)" $url.Scheme -}}
+
+{{- $isRemote := or
+  (eq $url.Scheme "http")
+  (eq $url.Scheme "https")
+  (eq $url.Scheme "data")
+-}}
+
 {{- $resource := "" -}}
+{{- $imageSrc := $urlStr -}}
 
 {{- if not $isRemote -}}
-  {{- $resource = or ($.Page.Resources.GetMatch $urlStr) (resources.Get $urlStr) -}}
+
+  {{/*
+    /images/example.jpg のような先頭のスラッシュを除去する。
+
+    resources.Get は assets ディレクトリを基準にするため、
+    "images/example.jpg" の形式で渡す必要がある。
+  */}}
+  {{- $resourcePath := strings.TrimPrefix "/" $url.Path -}}
+
+  {{/*
+    Hugo Resourceとして画像を探す。
+
+    1. Page Bundle内の画像
+    2. assetsディレクトリ内の画像
+  */}}
+  {{- $resource = or
+    ($.Page.Resources.GetMatch $resourcePath)
+    (resources.Get $resourcePath)
+  -}}
+
+  {{/*
+    Resourceとして見つからなかった画像は、
+    baseURLのサブディレクトリを含むURLへ変換する。
+
+    例:
+    /images/example.jpg
+        ↓
+    /huzitalab/images/example.jpg
+  */}}
+  {{- $imageSrc = $resourcePath | relURL -}}
+
 {{- end -}}
 
 
 <figure
-  {{- range $k, $v := .Attributes -}}
-    {{- if $v -}}
-      {{- printf " %s=%q" $k ($v | transform.HTMLEscape) | safeHTMLAttr -}}
-    {{- end -}}
-  {{- end -}}>
+  {{- range $key, $value := .Attributes }}
+    {{- if $value }}
+      {{- printf " %s=%q"
+        $key
+        ($value | transform.HTMLEscape)
+        | safeHTMLAttr
+      -}}
+    {{- end }}
+  {{- end }}>
+
   {{- if $isRemote -}}
-    {{- template "RenderImageSimple" (dict "imgObj" "" "src" $urlStr "alt" $altText) -}}
+
+    {{- template "RenderImageSimple" (
+      dict
+        "imgObj" ""
+        "src" $urlStr
+        "alt" $altText
+    ) -}}
+
   {{- else if $resource -}}
+
     {{- $isSVG := eq $resource.MediaType.SubType "svg" -}}
-    {{- $shouldOptimize := and (not $disableImageOptimizationMD) (not $isSVG) -}}
+
+    {{- $shouldOptimize := and
+      (not $disableImageOptimizationMD)
+      (not $isSVG)
+    -}}
+
     {{- if $shouldOptimize -}}
-      {{- template "RenderImageResponsive" (dict "imgObj" $resource "alt" $altText) -}}
+
+      {{- template "RenderImageResponsive" (
+        dict
+          "imgObj" $resource
+          "alt" $altText
+      ) -}}
+
     {{- else -}}
-      {{/* Not optimize image
-        If it is an SVG file, pass the permalink
-        Otherwise, pass the resource to allow width and height attributes
-      */}}
+
       {{- if $isSVG -}}
-        {{- template "RenderImageSimple" (dict "imgObj" "" "src" $resource.RelPermalink "alt" $altText) -}}
+
+        {{- template "RenderImageSimple" (
+          dict
+            "imgObj" ""
+            "src" $resource.RelPermalink
+            "alt" $altText
+        ) -}}
+
       {{- else -}}
-        {{- template "RenderImageSimple" (dict "imgObj" $resource "src" $resource.RelPermalink "alt" $altText) -}}
+
+        {{- template "RenderImageSimple" (
+          dict
+            "imgObj" $resource
+            "src" $resource.RelPermalink
+            "alt" $altText
+        ) -}}
+
       {{- end -}}
+
     {{- end -}}
+
   {{- else -}}
-    {{- template "RenderImageSimple" (dict "imgObj" "" "src" $urlStr "alt" $altText) -}}
+
+    {{- template "RenderImageSimple" (
+      dict
+        "imgObj" ""
+        "src" $imageSrc
+        "alt" $altText
+    ) -}}
+
   {{- end -}}
 
-  {{- template "RenderImageCaption" (dict "caption" $caption) -}}
+  {{- template "RenderImageCaption" (
+    dict "caption" $caption
+  ) -}}
+
 </figure>
