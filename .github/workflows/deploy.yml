@@ -32,7 +32,23 @@ jobs:
 
       - name: Build Hugo site
         run: hugo --minify --baseURL "https://www.huzitat.com/"
+      
+      - name: Diagnose generated images
+        run: |
+          echo "===== Generated image files ====="
+          find public -type f \
+            \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.svg' \) \
+            | sort
 
+          echo
+          echo "===== Image references in generated HTML/CSS ====="
+          grep -RInE \
+            'src=|srcset=|background(-image)?:|url\(' \
+            public \
+            --include='*.html' \
+            --include='*.css' \
+            | head -n 300 || true
+      
       - name: Upload to Lolipop
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
