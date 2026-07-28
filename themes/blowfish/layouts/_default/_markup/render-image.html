@@ -76,40 +76,18 @@
 -}}
 
 {{- $resource := "" -}}
-{{- $imageSrc := $urlStr -}}
 
 {{- if not $isRemote -}}
-
   {{/*
-    /images/example.jpg のような先頭のスラッシュを除去する。
-
-    resources.Get は assets ディレクトリを基準にするため、
-    "images/example.jpg" の形式で渡す必要がある。
+    Markdown側が /images/foo.jpg でも、
+    Hugo Resources検索時は images/foo.jpg に直す。
   */}}
   {{- $resourcePath := strings.TrimPrefix "/" $url.Path -}}
 
-  {{/*
-    Hugo Resourceとして画像を探す。
-
-    1. Page Bundle内の画像
-    2. assetsディレクトリ内の画像
-  */}}
   {{- $resource = or
     ($.Page.Resources.GetMatch $resourcePath)
     (resources.Get $resourcePath)
   -}}
-
-  {{/*
-    Resourceとして見つからなかった画像は、
-    baseURLのサブディレクトリを含むURLへ変換する。
-
-    例:
-    /images/example.jpg
-        ↓
-    /huzitalab/images/example.jpg
-  */}}
-  {{- $imageSrc = $resourcePath | relURL -}}
-
 {{- end -}}
 
 
@@ -176,10 +154,18 @@
 
   {{- else -}}
 
+    {{/*
+      Resourceとして見つからなかった画像は、
+      Markdownに書かれたURLをそのまま使う。
+
+      /images/foo.jpg は
+      https://www.huzitat.com/images/foo.jpg
+      を参照する。
+    */}}
     {{- template "RenderImageSimple" (
       dict
         "imgObj" ""
-        "src" $imageSrc
+        "src" $urlStr
         "alt" $altText
     ) -}}
 
