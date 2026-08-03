@@ -1,6 +1,13 @@
 ---
 title: "Timelapse Video Generator"
-description: "A Python script for creating timelapse videos from sequential image files."
+description: "A Python script for creating timelapse videos from sequential image files."\
+date: 2026-08-03
+showTitle: true
+showDate: false
+showReadingTime: false
+showWordCount: false
+showTaxonomies: false
+showAuthorsBadges: false
 ---
 
 This page provides a Python script for creating a timelapse video from a sequence of image files.
