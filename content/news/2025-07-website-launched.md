@@ -3,6 +3,13 @@ title: "Laboratory website launched"
 date: 2025-07-01
 category: "Announcement"
 summary: "The official website of the Forest Environmental Assessment Laboratory has been launched."
+showTitle: true
+showDate: true
+showReadingTime: false
+showWordCount: false
+showTaxonomies: false
+showAuthorsBadges: false
+showPagination: false
 ---
 
 The official website of the Forest Environmental Assessment Laboratory has been launched.

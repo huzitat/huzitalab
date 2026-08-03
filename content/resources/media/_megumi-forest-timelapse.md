@@ -3,8 +3,11 @@ title: "Megumi no Mori Timelapse"
 description: "A timelapse record of seasonal and environmental changes in Megumi no Mori."
 date: 2026-08-03
 showTitle: true
-layout: "single"
-type: "news"
+showDate: false
+showReadingTime: false
+showWordCount: false
+showTaxonomies: false
+showAuthorsBadges: false
 ---
 
 This page presents a timelapse record of Megumi Forest.

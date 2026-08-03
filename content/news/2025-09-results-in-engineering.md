@@ -3,6 +3,13 @@ title: "Journal article published in Results in Engineering"
 date: 2025-09-25
 category: "Publication"
 summary: "Our paper on the economic impacts of material selection in check dam construction has been published."
+showTitle: true
+showDate: true
+showReadingTime: false
+showWordCount: false
+showTaxonomies: false
+showAuthorsBadges: false
+showPagination: false
 ---
 
 Our paper entitled  

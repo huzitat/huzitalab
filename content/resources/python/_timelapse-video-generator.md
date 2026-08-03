@@ -1,9 +1,6 @@
 ---
 title: "Timelapse Video Generator"
 description: "A Python script for creating timelapse videos from sequential image files."
-showTitle: true
-layout: "single"
-type: "news"
 ---
 
 This page provides a Python script for creating a timelapse video from a sequence of image files.
@@ -19,6 +16,7 @@ Install the required libraries with:
 ```bash
 pip install opencv-python tqdm
 ```
+
 ## Download
 
 [Download `timelapse.py` →](/downloads/timelapse.py)
@@ -26,7 +24,6 @@ pip install opencv-python tqdm
 ## Python Script
 
 ```python
-
 import cv2
 import os
 import glob
@@ -49,20 +46,26 @@ resolution = (width, height)
 
 # 動画ライターの設定
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # MP4用コーデック
-video_writer = cv2.VideoWriter(output_video, fourcc, frame_rate, resolution)
+video_writer = cv2.VideoWriter(
+    output_video,
+    fourcc,
+    frame_rate,
+    resolution
+)
 
 # 画像を順に動画に追加
 for img_file in image_files:
     img = cv2.imread(img_file)
+
     if img is None:
         print(f"警告: {img_file} を読み込めません。スキップします。")
         continue
+
     img_resized = cv2.resize(img, resolution)
     video_writer.write(img_resized)
 
 video_writer.release()
 print(f"タイムラプス動画を作成しました: {output_video}")
-
 ```
 
 ## Usage
