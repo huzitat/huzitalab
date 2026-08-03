@@ -98,6 +98,6 @@
     <loc>http://localhost:1313/resources/teaching/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/resources/python/_timelapse-video-generator/</loc>
+    <loc>http://localhost:1313/resources/python/timelapse-video-generator/</loc>
   </url>
 </urlset>
