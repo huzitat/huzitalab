@@ -9,6 +9,7 @@ showReadingTime: false
 showWordCount: false
 showTaxonomies: false
 showAuthorsBadges: false
+showTitle: false
 ---
 
 {{< page-hero

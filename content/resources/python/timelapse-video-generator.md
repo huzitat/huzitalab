@@ -1,6 +1,6 @@
 ---
 title: "Timelapse Video Generator"
-description: "A Python script for creating timelapse videos from sequential image files."\
+description: "A Python script for creating timelapse videos from sequential image files."
 date: 2026-08-03
 showTitle: true
 showDate: false
