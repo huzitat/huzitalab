@@ -1,56 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Peples on Forest Environmental Assessment Laboratory</title><link>https://www.huzitat.com/peple/</link><description>Recent content in Peples on Forest Environmental Assessment Laboratory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026</copyright><atom:link href="https://www.huzitat.com/peple/index.xml" rel="self" type="application/rss+xml"/><item><title>Associate Professor</title><link>https://www.huzitat.com/members/faculty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.huzitat.com/members/faculty/</guid><description>&lt;div class="page-hero"&gt;
-
-&lt;img src="https://www.huzitat.com/images/members/faculty-hero.jpg" alt="Associate Professor"&gt;
-
-&lt;div class="page-hero-overlay"&gt;
-
-&lt;h1&gt;Associate Professor&lt;/h1&gt;
-
-&lt;p&gt;Forest Environmental Assessment Laboratory&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;h2 class="relative group"&gt;Biography
- &lt;div id="biography" class="anchor"&gt;&lt;/div&gt;
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#biography" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;A short biography will be added here.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-
-&lt;h2 class="relative group"&gt;Research Interests
- &lt;div id="research-interests" class="anchor"&gt;&lt;/div&gt;
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#research-interests" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
- 
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Forest Environmental Assessment&lt;/li&gt;
-&lt;li&gt;Life Cycle Assessment (LCA)&lt;/li&gt;
-&lt;li&gt;Greenhouse Gas Accounting&lt;/li&gt;
-&lt;li&gt;Sustainable Wood Utilization&lt;/li&gt;
-&lt;li&gt;Regional Economy&lt;/li&gt;
-&lt;li&gt;Forest Resource Management&lt;/li&gt;
-&lt;li&gt;Satoyama and Human–Forest Relationships&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;h2 class="relative group"&gt;Education
- &lt;div id="education" class="anchor"&gt;&lt;/div&gt;
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#education" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;Details will be added.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peples on Forest Environmental Assessment Laboratory</title>
+    <link>http://localhost:1313/peple/</link>
+    <description>Recent content in Peples on Forest Environmental Assessment Laboratory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2026 </copyright>
+    <atom:link href="http://localhost:1313/peple/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Associate Professor</title>
+      <link>http://localhost:1313/members/faculty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/faculty/</guid>
+      <description>&lt;div class=&#34;page-hero&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/members/faculty-hero.jpg&#34; alt=&#34;Associate Professor&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;page-hero-overlay&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;h1&gt;Associate Professor&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Forest Environmental Assessment Laboratory&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Biography&#xD;&#xA;    &lt;div id=&#34;biography&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#biography&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;&lt;em&gt;A short biography will be added here.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Research Interests&#xD;&#xA;    &lt;div id=&#34;research-interests&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#research-interests&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Forest Environmental Assessment&lt;/li&gt;&#xA;&lt;li&gt;Life Cycle Assessment (LCA)&lt;/li&gt;&#xA;&lt;li&gt;Greenhouse Gas Accounting&lt;/li&gt;&#xA;&lt;li&gt;Sustainable Wood Utilization&lt;/li&gt;&#xA;&lt;li&gt;Regional Economy&lt;/li&gt;&#xA;&lt;li&gt;Forest Resource Management&lt;/li&gt;&#xA;&lt;li&gt;Satoyama and Human–Forest Relationships&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Education&#xD;&#xA;    &lt;div id=&#34;education&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#education&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Details will be added.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1540,3 +1540,113 @@ a.text-base.font-medium.truncate.min-w-0.shrink {
 .prose .about-section hr {
   max-width: none !important;
 }
+
+/* ==========================================================
+   Teaching Materials
+========================================================== */
+
+.teaching-course-list{
+  margin:2rem 0 3rem;
+}
+
+.teaching-course-card{
+  display:flex;
+  align-items:flex-start;
+  gap:1.5rem;
+
+  width:100%;
+  box-sizing:border-box;
+
+  padding:2rem;
+
+  border:1px solid rgba(120,120,120,.18);
+  border-radius:18px;
+
+  background:var(--card-background);
+
+  color:inherit;
+  text-decoration:none;
+
+  box-shadow:0 5px 16px rgba(0,0,0,.05);
+
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease;
+}
+
+.teaching-course-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 26px rgba(0,0,0,.1);
+  text-decoration:none;
+}
+
+.teaching-course-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex:0 0 64px;
+  width:64px;
+  height:64px;
+
+  border:1px solid rgba(70,140,90,.22);
+  border-radius:50%;
+
+  background:rgba(70,140,90,.12);
+  color:#4d8b63;
+
+  font-size:1.5rem;
+}
+
+.teaching-course-content{
+  flex:1;
+  min-width:0;
+}
+
+.teaching-course-label{
+  margin:0 0 .3rem;
+
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  color:#4d8b63;
+}
+
+.teaching-course-card h3{
+  margin:0 0 .7rem;
+  font-size:1.3rem;
+  line-height:1.4;
+}
+
+.teaching-course-card p:not(.teaching-course-label){
+  margin:0 0 1rem;
+  line-height:1.7;
+  opacity:.84;
+}
+
+.teaching-course-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+
+  font-size:.88rem;
+  font-weight:700;
+}
+
+@media(max-width:640px){
+
+  .teaching-course-card{
+    flex-direction:column;
+    padding:1.5rem;
+  }
+
+  .teaching-course-icon{
+    flex-basis:56px;
+    width:56px;
+    height:56px;
+  }
+
+}

@@ -9,6 +9,14 @@ This page provides a collection of useful software, databases, guidelines, organ
 
 ---
 
+## Teaching Materials
+
+Lecture notes, slides, handouts, and other educational materials used in our courses.
+
+[View teaching materials →](/resources/teaching/)
+
+---
+
 ## Software & Tools
 
 {{< resources-cards category="software" >}}

@@ -1,53 +1,36 @@
+{{ $news := where site.RegularPages "Section" "news" }}
+{{ $news = $news.ByDate.Reverse }}
+
 <div class="news-list">
 
+{{ range first 5 $news }}
+
 <div class="news-item">
 
 <div class="news-date">
-2025.09
+{{ .Date.Format "2006.01" }}
 </div>
 
 <div class="news-content">
 
 <h3>
-Journal article published in Results in Engineering
+<a href="{{ .RelPermalink }}">
+{{ .Title }}
+</a>
 </h3>
 
 <p>
-
-Our paper entitled
-<em>
-Economic Impacts of Material Selection on Check Dam Construction in Japan: An Input–Output Analysis Promoting Timber Use
-</em>
-has been published.
-
+{{ with .Description }}
+  {{ . }}
+{{ else }}
+  {{ .Summary | plainify | truncate 180 }}
+{{ end }}
 </p>
 
 </div>
 
 </div>
 
-
-
-<div class="news-item">
-
-<div class="news-date">
-2025.05
-</div>
-
-<div class="news-content">
-
-<h3>
-Laboratory website launched
-</h3>
-
-<p>
-
-The official website of the Forest Environmental Assessment Laboratory has been launched.
-
-</p>
-
-</div>
-
-</div>
+{{ end }}
 
 </div>

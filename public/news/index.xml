@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on Forest Environmental Assessment Laboratory</title><link>https://www.huzitat.com/news/</link><description>Recent content in News on Forest Environmental Assessment Laboratory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Thu, 25 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.huzitat.com/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Journal article published in Results in Engineering</title><link>https://www.huzitat.com/news/2025-09-results-in-engineering/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>https://www.huzitat.com/news/2025-09-results-in-engineering/</guid><description>Our paper on the economic impacts of material selection in check dam construction has been published.</description></item><item><title>Laboratory website launched</title><link>https://www.huzitat.com/news/2025-07-website-launched/</link><pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate><guid>https://www.huzitat.com/news/2025-07-website-launched/</guid><description>The official website of the Forest Environmental Assessment Laboratory has been launched.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Forest Environmental Assessment Laboratory</title>
+    <link>http://localhost:1313/news/</link>
+    <description>Recent content in News on Forest Environmental Assessment Laboratory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2026 </copyright>
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2024 and 2025 Environmental Economics Course Materials Now Available</title>
+      <link>http://localhost:1313/news/2026-08-environmental-economics-materials/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2026-08-environmental-economics-materials/</guid>
+      <description>&lt;p&gt;Course materials from the 2024 and 2025 Environmental Economics courses are now available on the Teaching Materials page.&lt;/p&gt;&#xA;&lt;p&gt;The materials are provided for reference and preparation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/resources/teaching/environmental-economics/&#34; &gt;View course materials →&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Journal article published in Results in Engineering</title>
+      <link>http://localhost:1313/news/2025-09-results-in-engineering/</link>
+      <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-09-results-in-engineering/</guid>
+      <description>Our paper on the economic impacts of material selection in check dam construction has been published.</description>
+      
+    </item>
+    
+    <item>
+      <title>Laboratory website launched</title>
+      <link>http://localhost:1313/news/2025-07-website-launched/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-07-website-launched/</guid>
+      <description>The official website of the Forest Environmental Assessment Laboratory has been launched.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
