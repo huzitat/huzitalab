@@ -17,6 +17,15 @@ Lecture notes, slides, handouts, and other educational materials used in our cou
 
 ---
 
+## Field Media
+
+A collection of photographs, timelapse videos, and other visual
+records from forests, research sites, and field activities.
+
+[Explore field media →](/resources/media/)
+
+---
+
 ## Software & Tools
 
 {{< resources-cards category="software" >}}
