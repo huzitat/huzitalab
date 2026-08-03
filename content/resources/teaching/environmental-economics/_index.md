@@ -28,6 +28,13 @@ Materials for the current academic year are distributed through Google Classroom
 
 Materials from previous academic years are available on Google Drive for reference and preparation.
 
+File names follow the convention below:
+
+- `eeXX.pdf`: Lecture slides used in class
+- `etXX.pdf`: Supplementary materials for the corresponding lecture
+
+For example, `ee01.pdf` contains the slides for Lecture 1, while `et01.pdf` contains its supplementary materials.
+
 - [2024 Course Materials →](https://drive.google.com/drive/folders/1nFttnI5gR-yTXXu8KR7EepI3wYJmvwGl?usp=drive_link)
 - [2025 Course Materials →](https://drive.google.com/drive/folders/1E6Ct8Yj29BmjdQ9dR8-HKUEoO-L2WCzJ?usp=sharing)
 
