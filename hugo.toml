@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.huzitat.com'
 locale = 'en-us'
 title = "Forest Environmental Assessment Laboratory"
 theme = "blowfish"
@@ -54,3 +54,6 @@ customCSS = ["css/custom.css"]
 [params.homepage]
 layout = "page"
 showRecent = false
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
