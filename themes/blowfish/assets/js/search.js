@@ -158,47 +158,83 @@ function executeQuery(term) {
     return;
   }
   let results = fuse.search(term);
-  let resultsHTML = "";
+
+  output.textContent = "";
 
   if (results.length > 0) {
+    var fragment = document.createDocumentFragment();
     results.forEach(function (value, key) {
       var html = value.item.summary;
       var div = document.createElement("div");
       div.innerHTML = html;
-      value.item.summary = div.textContent || div.innerText || "";
-      var title = value.item.externalUrl
-        ? value.item.title +
-          '<span class="text-xs ml-2 align-center cursor-default text-neutral-400 dark:text-neutral-500">' +
-          value.item.externalUrl +
-          "</span>"
-        : value.item.title;
-      var linkconfig = value.item.externalUrl
-        ? 'target="_blank" rel="noopener" href="' + value.item.externalUrl + '"'
-        : 'href="' + value.item.permalink + '"';
-      resultsHTML =
-        resultsHTML +
-        `<li class="mb-2">
-          <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2" 
-          ${linkconfig} tabindex="0">
-            <div class="grow">
-              <div class="-mb-1 text-lg font-bold">
-                ${title}
-              </div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">${value.item.section}<span class="px-2 text-primary-500">&middot;</span>${value.item.date ? value.item.date : ""}</span></div>
-              <div class="text-sm italic">${value.item.summary}</div>
-            </div>
-            <div class="ml-2 ltr:block rtl:hidden text-neutral-500">&rarr;</div>
-            <div class="mr-2 ltr:hidden rtl:block text-neutral-500">&larr;</div>
-          </a>
-        </li>`;
+      var summaryText = div.textContent || div.innerText || "";
+
+      var li = document.createElement("li");
+      li.className = "mb-2";
+
+      var a = document.createElement("a");
+      a.className =
+        "flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2";
+      a.setAttribute("tabindex", "0");
+      if (value.item.externalUrl) {
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "noopener");
+        a.href = value.item.externalUrl;
+      } else {
+        a.href = value.item.permalink;
+      }
+
+      var grow = document.createElement("div");
+      grow.className = "grow";
+
+      var titleDiv = document.createElement("div");
+      titleDiv.className = "-mb-1 text-lg font-bold";
+      titleDiv.textContent = value.item.title;
+      if (value.item.externalUrl) {
+        var externalSpan = document.createElement("span");
+        externalSpan.className =
+          "text-xs ml-2 align-center cursor-default text-neutral-400 dark:text-neutral-500";
+        externalSpan.textContent = value.item.externalUrl;
+        titleDiv.appendChild(externalSpan);
+      }
+
+      var metaDiv = document.createElement("div");
+      metaDiv.className = "text-sm text-neutral-500 dark:text-neutral-400";
+      metaDiv.appendChild(document.createTextNode(value.item.section));
+      var dotSpan = document.createElement("span");
+      dotSpan.className = "px-2 text-primary-500";
+      dotSpan.innerHTML = "&middot;";
+      metaDiv.appendChild(dotSpan);
+      metaDiv.appendChild(document.createTextNode(value.item.date ? value.item.date : ""));
+
+      var summaryDiv = document.createElement("div");
+      summaryDiv.className = "text-sm italic";
+      summaryDiv.textContent = summaryText;
+
+      grow.appendChild(titleDiv);
+      grow.appendChild(metaDiv);
+      grow.appendChild(summaryDiv);
+
+      var rightArrow = document.createElement("div");
+      rightArrow.className = "ml-2 ltr:block rtl:hidden text-neutral-500";
+      rightArrow.innerHTML = "&rarr;";
+
+      var leftArrow = document.createElement("div");
+      leftArrow.className = "mr-2 ltr:hidden rtl:block text-neutral-500";
+      leftArrow.innerHTML = "&larr;";
+
+      a.appendChild(grow);
+      a.appendChild(rightArrow);
+      a.appendChild(leftArrow);
+      li.appendChild(a);
+      fragment.appendChild(li);
     });
+    output.appendChild(fragment);
     hasResults = true;
   } else {
-    resultsHTML = "";
     hasResults = false;
   }
 
-  output.innerHTML = resultsHTML;
   if (results.length > 0 && output.firstChild) {
     first = output.firstChild.firstElementChild;
     last = output.lastChild.firstElementChild;
