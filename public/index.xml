@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Associate Professor</title>
@@ -86,6 +86,26 @@
       
       <guid>http://localhost:1313/research-themes/satoyama-community/</guid>
       <description>&lt;div class=&#34;page-hero&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/research/satoyama-community.jpg&#34; alt=&#34;Satoyama &amp;amp; Communities&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;page-hero-overlay&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;h1&gt;Satoyama &amp;amp; Communities&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Exploring relationships between forests, biodiversity, culture, and local communities.&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Overview&#xD;&#xA;    &lt;div id=&#34;overview&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#overview&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Satoyama landscapes have been shaped through long-term interactions between people and nature.&lt;/p&gt;&#xA;&lt;p&gt;Changes in population, lifestyles, and forest use have weakened many of these relationships. Our laboratory studies ways to reconnect people with forests through biodiversity, local knowledge, forest products, cultural practices, and community activities.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Meeting Minutes with Whisper and ChatGPT on Windows</title>
+      <link>http://localhost:1313/resources/tools/windows-whisper-meeting-minutes/</link>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resources/tools/windows-whisper-meeting-minutes/</guid>
+      <description>&lt;p&gt;This page describes how to transcribe an MP3 meeting recording with&#xA;OpenAI Whisper on Windows and organize the transcription into meeting&#xA;minutes with ChatGPT.&lt;/p&gt;&#xA;&lt;p&gt;FFmpeg is required because Whisper uses it internally to read audio&#xA;files. The MP3 file does not need to be converted or divided manually.&lt;/p&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Workflow&#xD;&#xA;    &lt;div id=&#34;workflow&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#workflow&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight-wrapper&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MP3 meeting recording&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Whisper reads the MP3 using FFmpeg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Text transcription&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ChatGPT organizes the transcription&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Manual review and correction&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Requirements&#xD;&#xA;    &lt;div id=&#34;requirements&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#requirements&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows&lt;/li&gt;&#xA;&lt;li&gt;Python 3&lt;/li&gt;&#xA;&lt;li&gt;FFmpeg&lt;/li&gt;&#xA;&lt;li&gt;OpenAI Whisper&lt;/li&gt;&#xA;&lt;li&gt;ChatGPT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;Install FFmpeg&#xD;&#xA;    &lt;div id=&#34;install-ffmpeg&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&#xD;&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xD;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#install-ffmpeg&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Whisper requires the FFmpeg command-line tool to read MP3 and other&#xA;audio files.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Megumi no Mori Timelapse Now Available</title>
+      <link>http://localhost:1313/news/2026-08-megumi_no_mori/</link>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2026-08-megumi_no_mori/</guid>
+      <description>&lt;p&gt;A timelapse video showing the changes in Megumi no Mori is now available.&lt;/p&gt;&#xA;&lt;p&gt;The video provides a visual record of how the forest changes over time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/resources/media/megumi-forest-timelapse/&#34; &gt;View the Megumi Forest Timelapse&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     
