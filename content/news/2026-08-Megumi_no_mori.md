@@ -10,7 +10,7 @@ showWordCount: false
 showTaxonomies: false
 showAuthorsBadges: false
 showPagination: false
----------------------
+---
 
 A timelapse video showing the changes in Megumi no Mori is now available.
 
