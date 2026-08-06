@@ -16,7 +16,7 @@ The images were captured at regular intervals to document changes in the forest 
 
 ## Video
 
-{{< gdrive-video id="1uM3z0WN1-Jla9Huzaxjvt-xXWUrh5cPO" >}}
+{{< gdrive-video id="1rlB5sbPSggXwgPjgqhSVLtW2elRxGJmj" >}}
 
 > **Viewing note:** The changes are easier to see when the video is played in **1080p**.
 
