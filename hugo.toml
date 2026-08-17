@@ -51,6 +51,10 @@ weight = 90
 [params]
 customCSS = ["css/custom.css"]
 
+[services]
+  [services.googleAnalytics]
+    id = "G-DFD4E050GQ"
+
 [params.homepage]
 layout = "page"
 showRecent = false
