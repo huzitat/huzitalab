@@ -35,6 +35,10 @@
   color: white;
 }
 
+html:lang(ja) .lab-hero__content h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
 .lab-hero__content p {
   max-width: 650px;
   margin: 0 0 2rem;
