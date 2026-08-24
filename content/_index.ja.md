@@ -5,7 +5,7 @@ description: "Creating value from forests for people, regions, and the environme
 
 {{< hero
   image="/images/home-forest.jpg"
-  title="Forest Environmental Assessment Laboratory"
+  title="森林環境評価学研究室"
   tagline="Creating value from forests for people, regions, and the environment."
 >}}
 
