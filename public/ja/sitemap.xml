@@ -3,6 +3,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/members/faculty/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/ja/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -35,6 +38,71 @@
       rel="alternate"
       hreflang="ja-JP"
       href="http://localhost:1313/ja/about/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/access/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/access/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/access/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/members/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/members/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/members/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/peple/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/peple/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/peple/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/projects/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/projects/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/projects/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/publications/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/publications/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/publications/"
     />
   </url>
 </urlset>

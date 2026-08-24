@@ -3,9 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/members/faculty/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/projects/wood-lca/</loc>
   </url>
   <url>
@@ -55,6 +52,16 @@
   <url>
     <loc>http://localhost:1313/resources/</loc>
     <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/resources/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/resources/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/resources/tools/</loc>
@@ -103,27 +110,87 @@
   </url>
   <url>
     <loc>http://localhost:1313/access/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/access/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/access/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/resources/teaching/environmental-economics/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/members/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/members/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/peple/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/peple/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/peple/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/project-details/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/projects/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/projects/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/publications/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/publications/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/publications/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/research/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/research/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/research/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/research-themes/</loc>
