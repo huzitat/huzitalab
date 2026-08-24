@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/ja/events/</loc>
-    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/ja/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -19,6 +15,10 @@
       hreflang="ja-JP"
       href="http://localhost:1313/ja/"
     />
+  </url>
+  <url>
+    <loc>http://localhost:1313/ja/events/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/ja/events/matsutake-walk-2026/</loc>

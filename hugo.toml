@@ -7,16 +7,23 @@ defaultContentLanguageInSubdir = false
 
 [languages]
 
-  [languages.en]
-    local = "en-US"
-    label = "English"
-    weight = 1
+[languages.en]
+locale = "en-US"
+label = "English"
+weight = 1
 
-  [languages.ja]
-    local = "ja-JP"
-    label = "日本語"
-    weight = 2
+  [languages.en.params]
+  displayName = "ENglish"
+  isoCode = "en-US"
 
+[languages.ja]
+locale = "ja-JP"
+label = "日本語"
+weight = 2
+
+  [languages.ja.params]
+  displayName = "日本語"
+  isoCode = "ja-JP"
 
 [[menus.main]]
 name = "Home"
