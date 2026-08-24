@@ -1,7 +1,22 @@
 baseURL = 'https://www.huzitat.com'
-locale = 'en-us'
 title = "Forest Environmental Assessment Laboratory"
 theme = "blowfish"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 1
+
+  [languages.ja]
+    languageCode = "ja-JP"
+    languageName = "日本語"
+    weight = 2
+
 
 [[menus.main]]
 name = "Home"
@@ -44,20 +59,29 @@ pageRef = "/news"
 weight = 80
 
 [[menus.main]]
+name = "Events"
+pageRef = "/events"
+weight = 85
+
+[[menus.main]]
 name = "Access"
 pageRef = "/access"
 weight = 90
 
+
 [params]
 customCSS = ["css/custom.css"]
+
 
 [services]
   [services.googleAnalytics]
     id = "G-DFD4E050GQ"
 
+
 [params.homepage]
 layout = "page"
 showRecent = false
+
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
