@@ -8,13 +8,13 @@ defaultContentLanguageInSubdir = false
 [languages]
 
   [languages.en]
-    languageCode = "en-US"
-    languageName = "English"
+    local = "en-US"
+    label = "English"
     weight = 1
 
   [languages.ja]
-    languageCode = "ja-JP"
-    languageName = "日本語"
+    local = "ja-JP"
+    label = "日本語"
     weight = 2
 
 
