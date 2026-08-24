@@ -22,6 +22,16 @@
   <url>
     <loc>http://localhost:1313/ja/events/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/events/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/events/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/ja/news/</loc>
