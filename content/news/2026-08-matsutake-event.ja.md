@@ -1,6 +1,7 @@
 ---
 title: "マツタケ散策イベントを開催します"
 date: 2026-08-24
+category: Events
 description: "地域の方を対象に、マツタケを探しながら里山を歩く散策イベントを開催します。"
 
 showTitle: true

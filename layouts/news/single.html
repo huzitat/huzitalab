@@ -44,12 +44,18 @@
         (.Params.showWordCount | default false)
         (.Params.showTaxonomies | default false)
       }}
-        <div
-          class="text-base text-neutral-500 dark:text-neutral-400 print:hidden"
-          style="margin: 0;"
-        >
-          {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
-        </div>
+<div
+  class="text-base text-neutral-500 dark:text-neutral-400 print:hidden"
+  style="margin: 0;"
+>
+  {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+
+  {{ with .Params.category }}
+    <div class="news-category" style="margin-top: 0.5rem;">
+      {{ . }}
+    </div>
+  {{ end }}
+</div>
       {{ end }}
 
       {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}

@@ -7,27 +7,37 @@
 
 <div class="news-item">
 
-<div class="news-date">
-{{ .Date.Format "2006.01" }}
-</div>
+  <div class="news-meta">
 
-<div class="news-content">
+    <div class="news-date">
+      {{ .Date.Format "2006.01" }}
+    </div>
 
-<h3>
-<a href="{{ .RelPermalink }}">
-{{ .Title }}
-</a>
-</h3>
+    {{ with .Params.category }}
+    <div class="news-category">
+      {{ . }}
+    </div>
+    {{ end }}
 
-<p>
-{{ with .Description }}
-  {{ . }}
-{{ else }}
-  {{ .Summary | plainify | truncate 180 }}
-{{ end }}
-</p>
+  </div>
 
-</div>
+  <div class="news-content">
+
+    <h3>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h3>
+
+    <p>
+      {{ with .Description }}
+        {{ . }}
+      {{ else }}
+        {{ .Summary | plainify | truncate 180 }}
+      {{ end }}
+    </p>
+
+  </div>
 
 </div>
 
