@@ -1,5 +1,5 @@
 ---
-title: "猫山 マツタケたくさん会"
+title: "猫山 マツタケ探索会"
 date: 2026-08-24
 draft: false
 eventDate: 2026-10-05
