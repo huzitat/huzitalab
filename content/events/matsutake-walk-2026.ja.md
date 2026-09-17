@@ -6,126 +6,57 @@ draft: false
 eventDate: 2026-10-11
 location: "猫山創造の森公園"
 startTime: "10:00"
-endTime: "12:00"
+endTime: "11:30"
 
 capacity: 20
 fee: "無料"
 registration: "事前申込制"
 contact: "huzita@nagano.ac.jp"
 
+showTitle: false
+showDate: false
 showReadingTime: false
 showWordCount: false
+showTaxonomies: false
+showAuthorsBadges: false
+showPagination: false
 ---
 
-<div class="event-hero">
-
-<img
-  src="/images/events/matsutake-walk-2026/hero.jpg"
-  alt="猫山の森林">
-
-<div class="event-hero-overlay">
-
-<div class="event-hero-content">
-
-<p class="event-hero-label">
-里山フィールドイベント
-</p>
-
-<h1>
-猫山 マツタケ探索会
-</h1>
-
-<p class="event-hero-subtitle">
-里山を歩きながら、マツタケと森林環境について学びます
-</p>
-
-</div>
-
-</div>
-
-</div>
+{{< event-masthead
+  image="/images/events/matsutake-walk-2026/hero.jpg"
+  image_alt="猫山の森林"
+  eyebrow="里山フィールドイベント"
+  title="猫山 マツタケ探索会"
+  subtitle="里山を歩きながら、マツタケと森林環境について学びます"
+  date="2026年10月11日（日）"
+  time="10:00〜11:30"
+  location="猫山創造の森公園"
+  capacity="20名程度"
+  fee="無料"
+  resident_url="https://forms.gle/CjbE86nnX8LEZTKM7"
+  general_url="https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header"
+>}}
 
 
-<div class="event-summary">
-
-<div class="event-summary-item">
-<div class="event-summary-icon">📅</div>
-<strong>開催日</strong>
-<span>2026年10月11日（日）</span>
-</div>
-
-<div class="event-summary-item">
-<div class="event-summary-icon">🕙</div>
-<strong>時間</strong>
-<span>10:00〜12:00</span>
-</div>
-
-<div class="event-summary-item">
-<div class="event-summary-icon">📍</div>
-<strong>場所</strong>
-<span>猫山創造の森公園</span>
-</div>
-
-<div class="event-summary-item">
-<div class="event-summary-icon">👥</div>
-<strong>定員</strong>
-<span>20名程度</span>
-</div>
-
-<div class="event-summary-item">
-<div class="event-summary-icon">💰</div>
-<strong>参加費</strong>
-<span>無料</span>
-</div>
-
-</div>
-
-
-## イベント概要
+## イベントについて
 
 かつてマツタケが採れていた里山（猫山）を歩きながら、現状の里山の生態や森林環境について学ぶ散策イベントを開催します。
 
 実際に猫山の林内を観察しながら、マツタケ発生環境や里山管理との関係について紹介します。
 
-
-<div class="event-photo">
-
-<img
-  src="/images/events/matsutake-walk-2026/forest.jpg"
-  alt="猫山の森林">
-
-</div>
-
-
-## 開催日時
-
-**2026年10月11日（日）**  
-10:00〜12:00
-
 ※開始は下組防災訓練終了後となります。
 
 
-## 開催場所
-
-**猫山創造の森公園**
+![猫山の林内の様子](/images/events/matsutake-walk-2026/forest.jpg)
 
 
-## 対象
+## 参加対象・服装
 
 どなたでも参加できます。
 
-ただし、山道を歩くため、歩きやすい服装・靴でご参加ください。  
+山道を歩くため、**歩きやすい服装・靴**でご参加ください。
+
 小学生以下の方は、保護者同伴でお願いします。
-
-
-## 定員
-
-**20名程度**
-
-
-## 参加費
-
-**無料**
 
 
 ## 持ち物
@@ -138,98 +69,51 @@ showWordCount: false
 - 必要に応じて虫よけ
 
 
-## アンケート・参加申込み
+## 参加申込み
 
-### 下組自治会にお住まいの方
+参加を希望される方は、ご覧になった案内に応じて、該当するフォームからお申し込みください。
 
-回覧でご案内しているアンケートには、以下のリンクからもご回答いただけます。
+### 回覧・自治会アンケートをご覧の方
+
+回覧でご案内しているアンケートには、下記のリンクからもご回答いただけます。
 
 マツタケ探索会への参加を希望される方は、アンケート内でお申し込みください。
 
-
-<div class="event-button-area">
-
-<a
-  class="event-button"
-  href="https://forms.gle/CjbE86nnX8LEZTKM7"
-  target="_blank"
-  rel="noopener noreferrer">
-アンケート・参加申込みはこちら →
-</a>
-
-</div>
-
+**[回覧・自治会アンケートを開く →](https://forms.gle/CjbE86nnX8LEZTKM7)**
 
 すでにアンケートで参加を申し込まれた方は、再度のお申込みは不要です。
 
 
-### それ以外の方
+### このページからお申し込みの方
 
-探索会への参加を希望される方は、下記のお問い合わせ先までご連絡ください。
+このページをご覧になって参加を希望される方は、下記のフォームからお申し込みください。
 
-参加についてご不明な点がありましたら、下記のお問い合わせ先までご連絡ください。
+**[マツタケ探索会 参加申込みフォームを開く →](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)**
 
 
 ## イベントチラシ
 
-イベントの詳しい内容は、こちらのチラシでもご覧いただけます。
+イベントの内容は、チラシでもご覧いただけます。
+
+[![猫山マツタケ探索会のイベントチラシ](/images/events/matsutake-walk-2026/flyer.jpg)](/pdf/events/matsutake-walk-2026.pdf)
+
+**[イベントチラシをPDFで開く →](/pdf/events/matsutake-walk-2026.pdf)**
 
 
-<div class="event-flyer">
+## 天候・開催判断について
 
-<a
-  href="/pdf/events/matsutake-walk-2026.pdf"
-  target="_blank"
-  rel="noopener noreferrer">
-
-<img
-  src="/images/events/matsutake-walk-2026/flyer.jpg"
-  alt="猫山マツタケ探索会 イベントチラシ">
-
-</a>
+> **少雨の場合は開催します。**
+>
+> 開催するかどうか判断が難しい天候の場合は、**当日の午前6:00までに、このページでお知らせします。**
+>
+> ご参加の前に、このページをご確認ください。
 
 
-<div class="event-button-area">
-
-<a
-  class="event-button event-button-secondary"
-  href="/pdf/events/matsutake-walk-2026.pdf"
-  target="_blank"
-  rel="noopener noreferrer">
-📄 チラシをPDFで見る
-</a>
-
-</div>
-
-</div>
-
-
-## 注意事項
-
-<div class="event-notice">
-
-<p class="event-notice-title">
-☔ 天候について
-</p>
-
-<p>
-少雨の場合は開催します。
-</p>
-
-<p>
-開催するかどうか判断が難しい天候の場合は、<strong>当日の午前6:00までに、このページでお知らせします。</strong>
-</p>
-
-<p>
-参加前にこのページをご確認ください。
-</p>
-
-</div>
-
+## ご注意
 
 天候や猫山の状況によって、内容を変更または中止する場合があります。
 
-マツタケの発生状況によっては、実物を確認できない場合がありますので、あらかじめご了承ください。
+また、マツタケの発生状況によっては、実物を確認できない場合がありますので、あらかじめご了承ください。
 
 
 ## お問い合わせ

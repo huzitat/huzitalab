@@ -1654,154 +1654,185 @@ a.text-base.font-medium.truncate.min-w-0.shrink {
 }
 
 /* =========================================================
-   Matsutake Walk Event Page
+   Event masthead
    ========================================================= */
 
-
-/* ---------------------------------------------------------
-   Hero
-   --------------------------------------------------------- */
-
-.event-hero {
-  position: relative;
+.event-masthead {
   width: 100%;
-  height: 430px;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
+}
+
+
+/* ---------- Hero photograph ---------- */
+
+.event-masthead__visual {
+  position: relative;
+  min-height: 430px;
   overflow: hidden;
   border-radius: 18px;
+  background: #26382d;
 }
 
-.event-hero > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.event-hero-overlay {
+.event-masthead__image {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: flex-end;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.event-masthead__shade {
+  position: absolute;
+  inset: 0;
 
   background:
     linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.72) 0%,
-      rgba(0, 0, 0, 0.30) 48%,
-      rgba(0, 0, 0, 0.05) 100%
+      rgba(10, 20, 13, 0.82) 0%,
+      rgba(10, 20, 13, 0.40) 48%,
+      rgba(10, 20, 13, 0.08) 100%
     );
 }
 
-.event-hero-content {
-  padding: 2.3rem 2.5rem;
-  color: #ffffff;
+.event-masthead__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 2;
+
+  padding: 2.5rem;
 }
 
-.event-hero-label {
-  margin: 0 0 0.5rem;
-  font-size: 0.85rem;
+.event-masthead__eyebrow {
+  margin: 0 0 0.55rem !important;
+
+  color: rgba(255, 255, 255, 0.9) !important;
+
+  font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.08em;
 }
 
-.event-hero-content h1 {
-  margin: 0;
-  color: #ffffff;
-  font-size: clamp(2rem, 5vw, 3.3rem);
-  line-height: 1.15;
+.event-masthead__title {
+  margin: 0 !important;
+
+  color: #ffffff !important;
+
+  font-size: clamp(2rem, 5vw, 3.4rem);
   font-weight: 700;
+  line-height: 1.15;
 }
 
-.event-hero-subtitle {
-  margin: 0.8rem 0 0;
-  color: rgba(255, 255, 255, 0.95);
+.event-masthead__subtitle {
+  max-width: 720px;
+
+  margin: 0.8rem 0 0 !important;
+
+  color: rgba(255, 255, 255, 0.95) !important;
+
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 
-/* ---------------------------------------------------------
-   Event summary
-   --------------------------------------------------------- */
+/* ---------- Facts panel ---------- */
 
-.event-summary {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.9rem;
-  margin: 2rem 0 3rem;
-}
+.event-facts {
+  position: relative;
+  z-index: 3;
 
-.event-summary-item {
-  padding: 1.25rem 0.8rem;
-  text-align: center;
+  width: calc(100% - 3rem);
+  max-width: 1000px;
 
-  background: rgba(47, 111, 69, 0.06);
-  border: 1px solid rgba(47, 111, 69, 0.16);
+  margin: -1.5rem auto 0;
+  padding: 1.5rem;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 14px;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.07),
+    0 16px 38px rgba(0, 0, 0, 0.06);
 }
 
-.event-summary-icon {
-  margin-bottom: 0.4rem;
-  font-size: 1.6rem;
-  line-height: 1;
+.event-facts__grid {
+  display: grid;
+  grid-template-columns:
+    1.2fr
+    1fr
+    1.5fr
+    0.9fr
+    0.8fr;
+
+  gap: 0;
+  margin: 0;
 }
 
-.event-summary-item strong {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 0.85rem;
+.event-fact {
+  padding: 0.25rem 1rem;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.09);
 }
 
-.event-summary-item span {
-  display: block;
-  font-size: 0.92rem;
-  line-height: 1.5;
+.event-fact:first-child {
+  padding-left: 0.25rem;
+}
+
+.event-fact:last-child {
+  border-right: none;
+}
+
+.event-fact dt {
+  margin: 0 0 0.3rem;
+
+  color: #66736a;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.event-fact dd {
+  margin: 0;
+
+  color: #1f2c23;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 
-/* ---------------------------------------------------------
-   Event photograph
-   --------------------------------------------------------- */
+/* ---------- Primary CTA ---------- */
 
-.event-photo {
-  margin: 2rem 0 3rem;
-}
+.event-facts__action {
+  margin-top: 1.35rem;
+  padding-top: 1.25rem;
 
-.event-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 620px;
-
-  object-fit: cover;
-
-  border-radius: 16px;
-}
-
-
-/* ---------------------------------------------------------
-   Buttons
-   --------------------------------------------------------- */
-
-.event-button-area {
-  margin: 1.8rem 0;
   text-align: center;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.event-button {
+.event-apply-button {
   display: inline-block;
 
-  padding: 0.9rem 1.7rem;
+  padding: 0.9rem 2rem;
 
   background: #2f6f45;
   color: #ffffff !important;
 
   border-radius: 9px;
 
+  font-weight: 650;
   text-decoration: none !important;
-  font-weight: 600;
 
   transition:
     background 0.2s ease,
@@ -1809,154 +1840,230 @@ a.text-base.font-medium.truncate.min-w-0.shrink {
     box-shadow 0.2s ease;
 }
 
-.event-button:hover {
+.event-apply-button:hover {
   background: #245838;
 
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 
-  box-shadow:
-    0 5px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
 }
 
-.event-button-secondary {
-  background: #59675c;
+.event-facts__note {
+  margin: 0.7rem auto 0 !important;
+
+  color: #657068 !important;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
-.event-button-secondary:hover {
-  background: #465148;
-}
 
+/* =========================================================
+   Event content photographs
+   ========================================================= */
 
-/* ---------------------------------------------------------
-   Flyer
-   --------------------------------------------------------- */
-
-.event-flyer {
-  width: 100%;
-  max-width: 600px;
-
-  margin: 2rem auto 3rem;
-
-  text-align: center;
-}
-
-.event-flyer > a {
-  display: block;
-}
-
-.event-flyer img {
+img[src="/images/events/matsutake-walk-2026/forest.jpg"] {
   display: block;
 
   width: 100%;
   height: auto;
 
-  margin: 0 auto;
+  margin: 1.5rem auto 2.5rem;
+
+  border-radius: 14px;
+}
+
+
+/* ---------- Flyer preview ---------- */
+
+img[src="/images/events/matsutake-walk-2026/flyer.jpg"] {
+  display: block;
+
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+
+  margin: 1.5rem auto;
 
   background: #ffffff;
 
-  border-radius: 8px;
+  border-radius: 6px;
 
   box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.08),
-    0 12px 32px rgba(0, 0, 0, 0.10);
+    0 4px 14px rgba(0, 0, 0, 0.08),
+    0 14px 34px rgba(0, 0, 0, 0.08);
 
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-.event-flyer img:hover {
-  transform: translateY(-3px);
+img[src="/images/events/matsutake-walk-2026/flyer.jpg"]:hover {
+  transform: translateY(-2px);
 
   box-shadow:
-    0 5px 14px rgba(0, 0, 0, 0.10),
-    0 16px 38px rgba(0, 0, 0, 0.12);
+    0 6px 18px rgba(0, 0, 0, 0.10),
+    0 18px 40px rgba(0, 0, 0, 0.10);
 }
 
 
-/* ---------------------------------------------------------
-   Weather notice
-   --------------------------------------------------------- */
+/* =========================================================
+   Dark mode
+   ========================================================= */
 
-.event-notice {
-  margin: 1.5rem 0 2rem;
+html.dark .event-facts {
+  background: #202520;
 
-  padding: 1.3rem 1.5rem;
-
-  background: #fff8e8;
-
-  border-left: 5px solid #d6a33b;
-  border-radius: 9px;
+  border-color: rgba(255, 255, 255, 0.10);
 }
 
-.event-notice p {
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+html.dark .event-fact {
+  border-color: rgba(255, 255, 255, 0.10);
 }
 
-.event-notice-title {
-  margin-top: 0 !important;
+html.dark .event-fact dt {
+  color: #aeb8b0;
+}
 
-  font-size: 1.05rem;
-  font-weight: 700;
+html.dark .event-fact dd {
+  color: #f1f3f1;
+}
+
+html.dark .event-facts__action {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+html.dark .event-facts__note {
+  color: #b7beb8 !important;
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    Tablet
-   --------------------------------------------------------- */
+   ========================================================= */
 
 @media (max-width: 900px) {
 
-  .event-summary {
-    grid-template-columns: repeat(3, 1fr);
+  .event-facts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .event-fact {
+    padding: 0;
+
+    border-right: none;
+  }
+
+  .event-fact--location {
+    grid-column: 1 / -1;
   }
 
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    Smartphone
-   --------------------------------------------------------- */
+   ========================================================= */
 
 @media (max-width: 640px) {
 
-  .event-hero {
-    height: 320px;
+  .event-masthead__visual {
+    min-height: 360px;
     border-radius: 12px;
   }
 
-  .event-hero-content {
+  .event-masthead__content {
     padding: 1.5rem;
   }
 
-  .event-hero-content h1 {
+  .event-masthead__title {
     font-size: 2rem;
   }
 
-  .event-hero-subtitle {
+  .event-masthead__subtitle {
     font-size: 0.92rem;
   }
 
+  .event-facts {
+    width: calc(100% - 1.25rem);
 
-  .event-summary {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.7rem;
+    margin-top: -1rem;
+    padding: 1.2rem;
   }
 
-  .event-summary-item {
-    padding: 1rem 0.6rem;
+  .event-facts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem 0.8rem;
   }
 
+  .event-fact--location {
+    grid-column: 1 / -1;
+  }
 
-  .event-button {
+  .event-apply-button {
+    display: block;
     width: 100%;
+
     box-sizing: border-box;
   }
 
+}
 
-  .event-notice {
-    padding: 1.1rem 1.2rem;
+.event-facts__action-title {
+  margin: 0 0 0.9rem;
+  font-weight: 700;
+}
+
+.event-apply-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.event-apply-button--secondary {
+  background: #59675c;
+}
+
+.event-apply-button--secondary:hover {
+  background: #465148;
+}
+
+@media (max-width: 640px) {
+
+  .event-apply-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.event-facts__action-title {
+  margin: 0 0 0.9rem;
+  font-weight: 700;
+}
+
+.event-apply-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.event-apply-button--secondary {
+  background: #59675c;
+}
+
+.event-apply-button--secondary:hover {
+  background: #465148;
+}
+
+@media (max-width: 640px) {
+
+  .event-apply-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
 }

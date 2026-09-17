@@ -1,0 +1,103 @@
+<section class="event-masthead">
+
+  <div class="event-masthead__visual">
+
+    <img
+      class="event-masthead__image"
+      src="{{ .Get "image" }}"
+      alt="{{ .Get "image_alt" }}">
+
+    <div class="event-masthead__shade"></div>
+
+    <div class="event-masthead__content">
+
+      <p class="event-masthead__eyebrow">
+        {{ .Get "eyebrow" }}
+      </p>
+
+      <h1 class="event-masthead__title">
+        {{ .Get "title" }}
+      </h1>
+
+      <p class="event-masthead__subtitle">
+        {{ .Get "subtitle" }}
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="event-facts">
+
+    <dl class="event-facts__grid">
+
+      <div class="event-fact">
+        <dt>開催日</dt>
+        <dd>{{ .Get "date" }}</dd>
+      </div>
+
+      <div class="event-fact">
+        <dt>時間</dt>
+        <dd>{{ .Get "time" }}</dd>
+      </div>
+
+      <div class="event-fact event-fact--location">
+        <dt>場所</dt>
+        <dd>{{ .Get "location" }}</dd>
+      </div>
+
+      <div class="event-fact">
+        <dt>定員</dt>
+        <dd>{{ .Get "capacity" }}</dd>
+      </div>
+
+      <div class="event-fact">
+        <dt>参加費</dt>
+        <dd>{{ .Get "fee" }}</dd>
+      </div>
+
+    </dl>
+
+
+    <div class="event-facts__action">
+
+      <p class="event-facts__action-title">
+        参加申込み
+      </p>
+
+      <p class="event-facts__action-lead">
+        ご覧になった案内に応じて、該当するフォームからお申し込みください。
+      </p>
+
+
+      <div class="event-apply-buttons">
+
+        <a
+          class="event-apply-button"
+          href="{{ .Get "resident_url" }}"
+          target="_blank"
+          rel="noopener noreferrer">
+          回覧・自治会アンケートをご覧の方
+        </a>
+
+        <a
+          class="event-apply-button event-apply-button--secondary"
+          href="{{ .Get "general_url" }}"
+          target="_blank"
+          rel="noopener noreferrer">
+          このページからお申し込みの方
+        </a>
+
+      </div>
+
+
+      <p class="event-facts__note">
+        すでに回覧・自治会アンケートから参加を申し込まれた方は、再度のお申込みは不要です。
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
