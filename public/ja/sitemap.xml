@@ -48,12 +48,26 @@
     />
   </url>
   <url>
+    <loc>http://localhost:1313/ja/news/2026-08-matsutake-event/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/ja/events/matsutake-walk-2026/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/ja/news/2026-08-matsutake-event/</loc>
-    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ja/news/2025-09-results-in-engineering/</loc>
+    <lastmod>2025-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-US"
+      href="http://localhost:1313/news/2025-09-results-in-engineering/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja-JP"
+      href="http://localhost:1313/ja/news/2025-09-results-in-engineering/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/ja/about/</loc>
