@@ -1,3 +1,5 @@
+{{ $isJa := eq .Page.Language.Lang "ja" }}
+
 <section class="event-masthead">
 
   <div class="event-masthead__visual">
@@ -33,28 +35,77 @@
     <dl class="event-facts__grid">
 
       <div class="event-fact">
-        <dt>開催日</dt>
-        <dd>{{ .Get "date" }}</dd>
+        <dt>
+          {{ if $isJa }}
+            開催日
+          {{ else }}
+            Date
+          {{ end }}
+        </dt>
+
+        <dd>
+          {{ .Get "date" }}
+        </dd>
       </div>
 
+
       <div class="event-fact">
-        <dt>時間</dt>
-        <dd>{{ .Get "time" }}</dd>
+        <dt>
+          {{ if $isJa }}
+            時間
+          {{ else }}
+            Time
+          {{ end }}
+        </dt>
+
+        <dd>
+          {{ .Get "time" }}
+        </dd>
       </div>
+
 
       <div class="event-fact event-fact--location">
-        <dt>場所</dt>
-        <dd>{{ .Get "location" }}</dd>
+        <dt>
+          {{ if $isJa }}
+            場所
+          {{ else }}
+            Venue
+          {{ end }}
+        </dt>
+
+        <dd>
+          {{ .Get "location" }}
+        </dd>
       </div>
 
-      <div class="event-fact">
-        <dt>定員</dt>
-        <dd>{{ .Get "capacity" }}</dd>
-      </div>
 
       <div class="event-fact">
-        <dt>参加費</dt>
-        <dd>{{ .Get "fee" }}</dd>
+        <dt>
+          {{ if $isJa }}
+            定員
+          {{ else }}
+            Capacity
+          {{ end }}
+        </dt>
+
+        <dd>
+          {{ .Get "capacity" }}
+        </dd>
+      </div>
+
+
+      <div class="event-fact">
+        <dt>
+          {{ if $isJa }}
+            参加費
+          {{ else }}
+            Fee
+          {{ end }}
+        </dt>
+
+        <dd>
+          {{ .Get "fee" }}
+        </dd>
       </div>
 
     </dl>
@@ -63,11 +114,20 @@
     <div class="event-facts__action">
 
       <p class="event-facts__action-title">
-        参加申込み
+        {{ if $isJa }}
+          参加申込み
+        {{ else }}
+          Registration
+        {{ end }}
       </p>
 
+
       <p class="event-facts__action-lead">
-        ご覧になった案内に応じて、該当するフォームからお申し込みください。
+        {{ if $isJa }}
+          該当する申込方法を選んでください。
+        {{ else }}
+          Please choose the registration option that applies to you.
+        {{ end }}
       </p>
 
 
@@ -78,22 +138,41 @@
           href="{{ .Get "resident_url" }}"
           target="_blank"
           rel="noopener noreferrer">
-          回覧・自治会アンケートをご覧の方
+
+          {{ if $isJa }}
+            回覧アンケートに回答する
+          {{ else }}
+            Open Neighborhood Survey
+          {{ end }}
+
         </a>
 
+
         <a
-          class="event-apply-button event-apply-button--secondary"
+          class="event-apply-button"
           href="{{ .Get "general_url" }}"
           target="_blank"
           rel="noopener noreferrer">
-          このページからお申し込みの方
+
+          {{ if $isJa }}
+            マツタケ探索会に申し込む
+          {{ else }}
+            Register for the Matsutake Walk
+          {{ end }}
+
         </a>
 
       </div>
 
 
       <p class="event-facts__note">
-        すでに回覧・自治会アンケートから参加を申し込まれた方は、再度のお申込みは不要です。
+
+        {{ if $isJa }}
+          回覧アンケートから参加申込み済みの方は、再度のお申込みは不要です。
+        {{ else }}
+          If you have already registered through the neighborhood survey, you do not need to register again.
+        {{ end }}
+
       </p>
 
     </div>

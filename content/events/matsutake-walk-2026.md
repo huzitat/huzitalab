@@ -4,14 +4,14 @@ date: 2026-08-24
 draft: false
 
 eventDate: 2026-10-11
-location: "猫山創造の森公園"
+location: "Nekoyama Sozo-no-Mori Park"
 startTime: "10:00"
 endTime: "11:30"
 
 capacity: 20
-fee: "無料"
-registration: "事前申込制"
-contact: "huzita@nagano.ac.jp"
+fee: "Free"
+registration: "Advance registration required"
+contact: "[huzita@nagano.ac.jp](mailto:huzita@nagano.ac.jp)"
 
 showTitle: false
 showDate: false
@@ -24,115 +24,105 @@ showPagination: false
 
 {{< event-masthead
   image="/images/events/matsutake-walk-2026/hero.jpg"
-  image_alt="猫山の森林"
-  eyebrow="里山フィールドイベント"
+  image_alt="Forest at Nekoyama"
+  eyebrow="Satoyama Field Event"
   title="Nekoyama Matsutake Exploration Walk"
-  subtitle="里山を歩きながら、マツタケと森林環境について学びます"
-  date="2026年10月11日（日）"
-  time="10:00〜11:30"
-  location="猫山創造の森公園"
-  capacity="20名程度"
-  fee="無料"
+  subtitle="Explore the satoyama forest and learn about matsutake mushrooms and the forest environment"
+  date="Sunday, October 11, 2026"
+  time="10:00–11:30"
+  location="Nekoyama Sozo-no-Mori Park"
+  capacity="Approx. 20 participants"
+  fee="Free"
   resident_url="https://forms.gle/CjbE86nnX8LEZTKM7"
   general_url="https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header"
 >}}
 
+## About the Event
 
-## イベントについて
+Join us for a walk through Nekoyama, a satoyama forest where matsutake mushrooms were once harvested, and learn about the ecology and forest environment of the area.
 
-かつてマツタケが採れていた里山（猫山）を歩きながら、現状の里山の生態や森林環境について学ぶ散策イベントを開催します。
+As we walk through the forest, we will look at the environmental conditions associated with matsutake mushrooms and explore the relationship between their habitat and traditional satoyama management.
 
-実際に猫山の林内を観察しながら、マツタケ発生環境や里山管理との関係について紹介します。
+The walk will begin after the Shimo-gumi neighborhood disaster preparedness drill has concluded.
 
-※開始は下組防災訓練終了後となります。
+![Forest at Nekoyama](/images/events/matsutake-walk-2026/forest.jpg)
 
+## Venue and Access
 
-![猫山の林内の様子](/images/events/matsutake-walk-2026/forest.jpg)
+The event will be held at **Nekoyama Sozo-no-Mori Park (猫山創造の森公園)**.
 
-
-## 会場・アクセス
-
-会場は**猫山創造の森公園**です。
-
-お越しになる前に、地図で場所をご確認ください。
+Please check the map before visiting the venue.
 
 {{< google-map
-  embed_url="https://www.google.com/maps?q=猫山観音堂,+上田市富士山,+長野県&output=embed"
-  map_url="https://maps.app.goo.gl/YpspTYEJHV6Jseyh9"
-  title="猫山創造の森公園周辺の地図"
+embed_url="https://www.google.com/maps?q=猫山観音堂,+上田市富士山,+長野県&output=embed"
+map_url="https://maps.app.goo.gl/YpspTYEJHV6Jseyh9"
+title="Map of Nekoyama Sozo-no-Mori Park"
 >}}
 
-## 参加対象・服装
+## Who Can Participate
 
-どなたでも参加できます。
+Anyone is welcome to join.
 
-山道を歩くため、**歩きやすい服装・靴**でご参加ください。
+The event involves walking on forest trails, so please wear **comfortable clothing and suitable walking shoes**.
 
-小学生以下の方は、保護者同伴でお願いします。
+Children of elementary school age or younger must be accompanied by a parent or guardian.
 
+## What to Bring
 
-## 持ち物
+* Drinking water
+* Towel
+* Hat
+* Rain gear
+* Comfortable walking shoes
+* Insect repellent, if needed
 
-- 飲み物
-- タオル
-- 帽子
-- 雨具
-- 歩きやすい靴
-- 必要に応じて虫よけ
+## Registration
 
+Please use the appropriate form below to register.
 
-## 参加申込み
+### If You Received the Shimo-gumi Neighborhood Survey
 
-参加を希望される方は、ご覧になった案内に応じて、該当するフォームからお申し込みください。
+The survey distributed through the Shimo-gumi neighborhood circular is also available online.
 
-### 回覧・自治会アンケートをご覧の方
+If you would like to participate in the Matsutake Exploration Walk, please indicate your participation in the survey.
 
-回覧でご案内しているアンケートには、下記のリンクからもご回答いただけます。
+**[Open the Shimo-gumi neighborhood survey →](https://forms.gle/CjbE86nnX8LEZTKM7)**
 
-マツタケ探索会への参加を希望される方は、アンケート内でお申し込みください。
+If you have already registered for the event through the neighborhood survey, you do not need to register again.
 
-**[回覧・自治会アンケートを開く →](https://forms.gle/CjbE86nnX8LEZTKM7)**
+### If You Are Registering from This Website
 
-すでにアンケートで参加を申し込まれた方は、再度のお申込みは不要です。
+If you learned about the event through this website and would like to participate, please register using the form below.
 
+**[Open the Matsutake Exploration Walk registration form →](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)**
 
-### このページからお申し込みの方
+## Event Flyer
 
-このページをご覧になって参加を希望される方は、下記のアンケート内でお申し込みください。
+You can also view the event information in the flyer below.
 
-**[マツタケ探索会 参加申込みフォームを開く →](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)**
+[![Flyer for the Nekoyama Matsutake Exploration Walk](/images/events/matsutake-walk-2026/flyer.jpg)](/pdf/events/matsutake-walk-2026.pdf)
 
+**[Open the event flyer as a PDF →](/pdf/events/matsutake-walk-2026.pdf)**
 
-## イベントチラシ
+## Weather and Event Updates
 
-イベントの内容は、チラシでもご覧いただけます。
-
-[![猫山マツタケ探索会のイベントチラシ](/images/events/matsutake-walk-2026/flyer.jpg)](/pdf/events/matsutake-walk-2026.pdf)
-
-**[イベントチラシをPDFで開く →](/pdf/events/matsutake-walk-2026.pdf)**
-
-
-## 天候・開催判断について
-
-> **少雨の場合は開催します。**
+> **The event will be held in light rain.**
 >
-> 開催するかどうか判断が難しい天候の場合は、**当日の午前6:00までに、このページでお知らせします。**
+> If weather conditions make it difficult to determine whether the event can be held, an update will be posted on this page **by 6:00 a.m. on the day of the event**.
 >
-> ご参加の前に、このページをご確認ください。
+> Please check this page before coming to the event.
 
+## Important Notes
 
-## ご注意
+The event may be changed or cancelled depending on weather and forest conditions.
 
-天候や猫山の状況によって、内容を変更または中止する場合があります。
+Matsutake mushrooms may not be present on the day of the event, depending on natural conditions.
 
-また、マツタケの発生状況によっては、実物を確認できない場合がありますので、あらかじめご了承ください。
+## Contact
 
+Nagano University
+Forest Environmental Assessment Laboratory
 
-## お問い合わせ
-
-長野大学  
-森林環境評価学研究室
-
-藤田智郁
+Tomohumi Huzita
 
 E-mail: [huzita@nagano.ac.jp](mailto:huzita@nagano.ac.jp)

@@ -1,3 +1,5 @@
+{{ $isJa := eq .Page.Language.Lang "ja" }}
+
 <div class="google-map">
 
   <iframe
@@ -10,13 +12,20 @@
 
 </div>
 
+
 <div class="google-map-link">
 
   <a
     href="{{ .Get "map_url" }}"
     target="_blank"
     rel="noopener noreferrer">
-    Google Mapsで場所を確認する →
+
+    {{ if $isJa }}
+      Google Mapsで場所を確認する →
+    {{ else }}
+      View location on Google Maps →
+    {{ end }}
+
   </a>
 
 </div>
