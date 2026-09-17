@@ -98,7 +98,7 @@ showPagination: false
 
 ### このページからお申し込みの方
 
-このページをご覧になって参加を希望される方は、下記のフォームからお申し込みください。
+このページをご覧になって参加を希望される方は、下記のアンケート内でお申し込みください。
 
 **[マツタケ探索会 参加申込みフォームを開く →](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)**
 
