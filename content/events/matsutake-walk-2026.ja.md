@@ -50,6 +50,17 @@ showPagination: false
 ![猫山の林内の様子](/images/events/matsutake-walk-2026/forest.jpg)
 
 
+## 会場・アクセス
+
+会場は**猫山創造の森公園**です。
+
+お越しになる前に、地図で場所をご確認ください。
+
+{{< google-map
+  src="https://maps.app.goo.gl/YpspTYEJHV6Jseyh9"
+  title="猫山創造の森公園の地図"
+>}}
+
 ## 参加対象・服装
 
 どなたでも参加できます。
