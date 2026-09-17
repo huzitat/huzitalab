@@ -1,5 +1,5 @@
 ---
-title: "Nekoyama Matsutake Walk Event"
+title: "Nekoyama Matsutake Exploration Walk"
 date: 2026-08-24
 draft: false
 
@@ -26,7 +26,7 @@ showPagination: false
   image="/images/events/matsutake-walk-2026/hero.jpg"
   image_alt="猫山の森林"
   eyebrow="里山フィールドイベント"
-  title="猫山 マツタケ探索会"
+  title="Nekoyama Matsutake Exploration Walk"
   subtitle="里山を歩きながら、マツタケと森林環境について学びます"
   date="2026年10月11日（日）"
   time="10:00〜11:30"
