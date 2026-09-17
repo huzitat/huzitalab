@@ -1,6 +1,8 @@
 ---
 title: "猫山 マツタケ探索会"
-date: 2026-08-24
+
+date: 2026-10-11
+publishDate: 2026-08-24
 draft: false
 
 eventDate: 2026-10-11
@@ -14,7 +16,7 @@ registration: "事前申込制"
 contact: "huzita@nagano.ac.jp"
 
 showTitle: false
-showDate: false
+showDate: true
 showReadingTime: false
 showWordCount: false
 showTaxonomies: false

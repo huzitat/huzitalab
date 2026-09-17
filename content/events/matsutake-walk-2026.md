@@ -1,6 +1,8 @@
 ---
 title: "Nekoyama Matsutake Exploration Walk"
-date: 2026-08-24
+
+date: 2026-10-11
+publishDate: 2026-08-24
 draft: false
 
 eventDate: 2026-10-11
@@ -11,10 +13,10 @@ endTime: "11:30"
 capacity: 20
 fee: "Free"
 registration: "Advance registration required"
-contact: "[huzita@nagano.ac.jp](mailto:huzita@nagano.ac.jp)"
+contact: "huzita@nagano.ac.jp"
 
 showTitle: false
-showDate: false
+showDate: true
 showReadingTime: false
 showWordCount: false
 showTaxonomies: false
