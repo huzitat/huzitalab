@@ -35,6 +35,7 @@
     <dl class="event-facts__grid">
 
       <div class="event-fact">
+
         <dt>
           {{ if $isJa }}
             開催日
@@ -46,10 +47,12 @@
         <dd>
           {{ .Get "date" }}
         </dd>
+
       </div>
 
 
       <div class="event-fact">
+
         <dt>
           {{ if $isJa }}
             時間
@@ -61,10 +64,12 @@
         <dd>
           {{ .Get "time" }}
         </dd>
+
       </div>
 
 
       <div class="event-fact event-fact--location">
+
         <dt>
           {{ if $isJa }}
             場所
@@ -76,10 +81,12 @@
         <dd>
           {{ .Get "location" }}
         </dd>
+
       </div>
 
 
       <div class="event-fact">
+
         <dt>
           {{ if $isJa }}
             定員
@@ -91,10 +98,12 @@
         <dd>
           {{ .Get "capacity" }}
         </dd>
+
       </div>
 
 
       <div class="event-fact">
+
         <dt>
           {{ if $isJa }}
             参加費
@@ -106,6 +115,7 @@
         <dd>
           {{ .Get "fee" }}
         </dd>
+
       </div>
 
     </dl>
@@ -114,20 +124,32 @@
     <div class="event-facts__action">
 
       <p class="event-facts__action-title">
+
         {{ if $isJa }}
-          参加申込み
+          アンケートにご協力ください
         {{ else }}
-          Registration
+          Please Complete the Survey
         {{ end }}
+
       </p>
 
 
       <p class="event-facts__action-lead">
+
         {{ if $isJa }}
-          該当する申込方法を選んでください。
+
+          里山との関わりや利用などについてお尋ねするアンケートです。
+    最後に、マツタケ探索会への参加・不参加をお尋ねします。
+    ご覧になった案内に応じて、該当するアンケートにご回答ください。
+
         {{ else }}
-          Please choose the registration option that applies to you.
+
+          This survey asks about your relationship with and use of satoyama landscapes.
+    At the end of the survey, you will also be asked whether you plan to participate in the Matsutake Exploration Walk.
+    Please choose the appropriate survey below.
+
         {{ end }}
+
       </p>
 
 
@@ -140,9 +162,9 @@
           rel="noopener noreferrer">
 
           {{ if $isJa }}
-            回覧アンケートに回答する
+            回覧・自治会アンケートに回答する
           {{ else }}
-            Open Neighborhood Survey
+            Complete the Neighborhood Survey
           {{ end }}
 
         </a>
@@ -155,9 +177,9 @@
           rel="noopener noreferrer">
 
           {{ if $isJa }}
-            マツタケ探索会に申し込む
+            このページからアンケートに回答する
           {{ else }}
-            Register for the Matsutake Walk
+            Complete the Online Survey
           {{ end }}
 
         </a>
@@ -168,9 +190,13 @@
       <p class="event-facts__note">
 
         {{ if $isJa }}
-          回覧アンケートから参加申込み済みの方は、再度のお申込みは不要です。
+
+          ※すでにアンケートに回答された方は、再度ご回答いただく必要はありません。
+
         {{ else }}
-          If you have already registered through the neighborhood survey, you do not need to register again.
+
+          If you have already completed the survey, you do not need to submit another response.
+
         {{ end }}
 
       </p>

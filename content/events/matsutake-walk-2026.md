@@ -76,25 +76,33 @@ Children of elementary school age or younger must be accompanied by a parent or 
 * Comfortable walking shoes
 * Insect repellent, if needed
 
-## Registration
+## Satoyama Survey
 
-Please use the appropriate form below to register.
+This survey asks about your relationship with and use of satoyama landscapes.
+
+At the end of the survey, you will be asked whether you plan to participate in the **Nekoyama Matsutake Exploration Walk**.
+
+Please complete the appropriate survey below.
+
 
 ### If You Received the Shimo-gumi Neighborhood Survey
 
 The survey distributed through the Shimo-gumi neighborhood circular is also available online.
 
-If you would like to participate in the Matsutake Exploration Walk, please indicate your participation in the survey.
+The survey also asks at the end whether you plan to participate in the Matsutake Exploration Walk.
 
-**[Open the Shimo-gumi neighborhood survey →](https://forms.gle/CjbE86nnX8LEZTKM7)**
+[**Complete the Shimo-gumi Neighborhood Survey →**](https://forms.gle/CjbE86nnX8LEZTKM7)
 
-If you have already registered for the event through the neighborhood survey, you do not need to register again.
+If you have already completed the survey, you do not need to submit another response.
 
-### If You Are Registering from This Website
 
-If you learned about the event through this website and would like to participate, please register using the form below.
+### If You Did Not Receive the Shimo-gumi Neighborhood Survey
 
-**[Open the Matsutake Exploration Walk registration form →](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)**
+If you learned about the Matsutake Exploration Walk through this website or another source, please complete the survey below.
+
+The survey also asks at the end whether you plan to participate in the Matsutake Exploration Walk.
+
+[**Complete the Satoyama Survey →**](https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header)
 
 ## Event Flyer
 
