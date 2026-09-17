@@ -57,8 +57,9 @@ showPagination: false
 お越しになる前に、地図で場所をご確認ください。
 
 {{< google-map
-  src="https://maps.app.goo.gl/YpspTYEJHV6Jseyh9"
-  title="猫山創造の森公園の地図"
+  embed_url="https://www.google.com/maps?q=猫山観音堂,+上田市富士山,+長野県&output=embed"
+  map_url="https://maps.app.goo.gl/YpspTYEJHV6Jseyh9"
+  title="猫山創造の森公園周辺の地図"
 >}}
 
 ## 参加対象・服装

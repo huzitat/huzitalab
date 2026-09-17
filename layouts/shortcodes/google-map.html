@@ -1,7 +1,7 @@
 <div class="google-map">
 
   <iframe
-    src="{{ .Get "src" }}"
+    src="{{ .Get "embed_url" }}"
     title="{{ .Get "title" }}"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
@@ -13,7 +13,7 @@
 <div class="google-map-link">
 
   <a
-    href="{{ .Get "link" }}"
+    href="{{ .Get "map_url" }}"
     target="_blank"
     rel="noopener noreferrer">
     Google Mapsで場所を確認する →
