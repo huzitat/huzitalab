@@ -39,10 +39,13 @@ showPagination: false
   general_url="https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header"
 >}}
 
+## 開催報告
+
+2026年10月11日（日）、猫山マツタケ探索会を開催しました。
+
+ご参加いただいた皆さま、ありがとうございました。
 
 ## イベントについて
-
-**【10月11日更新】本日のマツタケ探索会は、予定通り開催します。**
 
 かつてマツタケが採れていた里山（猫山）を歩きながら、現状の里山の生態や森林環境について学ぶ散策イベントを開催します。
 

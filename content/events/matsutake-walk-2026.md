@@ -39,6 +39,12 @@ showPagination: false
   general_url="https://docs.google.com/forms/d/e/1FAIpQLSetWhEC93179z3FJp9qvX5O6ndGyMapNl31PXpkUY9GW83wWQ/viewform?usp=header"
 >}}
 
+## This event has concluded
+
+ The Nekoyama Matsutake Exploration Walk was held on October 11, 2026.  
+ Thank you to everyone who participated.
+
+
 ## About the Event
 
 Join us for a walk through Nekoyama, a satoyama forest where matsutake mushrooms were once harvested, and learn about the ecology and forest environment of the area.
