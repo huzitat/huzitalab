@@ -127,10 +127,10 @@ var updateMeta = () => {
   document.querySelector('meta[name="theme-color"]').setAttribute('content', style.backgroundColor);
 }
 
-{{ if and (.Site.Params.Logo) (.Site.Params.SecondaryLogo) }}
-{{ $primaryLogo := resources.Get .Site.Params.Logo }}
-{{ $secondaryLogo := resources.Get .Site.Params.SecondaryLogo }}
-{{ if and ($primaryLogo) ($secondaryLogo) }}
+/* {{ if and (.Site.Params.Logo) (.Site.Params.SecondaryLogo) }} */
+/* {{ $primaryLogo := resources.Get .Site.Params.Logo }} */
+/* {{ $secondaryLogo := resources.Get .Site.Params.SecondaryLogo }} */
+/* {{ if and ($primaryLogo) ($secondaryLogo) }} */
 var updateLogo = (targetAppearance) => {
   var imgElems = document.querySelectorAll("img.logo");
   var logoContainers = document.querySelectorAll("span.logo");
@@ -142,17 +142,17 @@ var updateLogo = (targetAppearance) => {
     elem.setAttribute("src", targetLogoPath)
   }
 
-  {{ if eq $primaryLogo.MediaType.SubType "svg" }}
+  /* {{ if eq $primaryLogo.MediaType.SubType "svg" }} */
   targetContent = 
     targetAppearance == "{{ .Site.Params.DefaultAppearance }}" ?
     `{{ $primaryLogo.Content | safeHTML }}` : `{{ $secondaryLogo.Content | safeHTML }}`
   for (const container of logoContainers) {
     container.innerHTML = targetContent;
   }
-  {{ end }}
+  /* {{ end }} */
 }
-{{ end }}
-{{- end }}
+/* {{ end }} */
+/* {{- end }} */
 
 var getTargetAppearance = () => {
   return document.documentElement.classList.contains("dark") ? "dark" : "light"
